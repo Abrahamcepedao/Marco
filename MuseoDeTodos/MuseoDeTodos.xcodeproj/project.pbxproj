@@ -25,6 +25,8 @@
 		D79F89FB26E8E48900659267 /* ExposicionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D79F89F926E8E48900659267 /* ExposicionTableViewCell.xib */; };
 		D79F8A0026E8E9F800659267 /* ExposicionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79F89FF26E8E9F800659267 /* ExposicionesViewController.swift */; };
 		D79F8A0526E8EAA400659267 /* Exposicion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79F8A0426E8EAA400659267 /* Exposicion.swift */; };
+		D79F8A0C26E8F4AA00659267 /* DatosPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79F8A0A26E8F4AA00659267 /* DatosPerfilViewController.swift */; };
+		D79F8A0D26E8F4AA00659267 /* DatosPerfilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D79F8A0B26E8F4AA00659267 /* DatosPerfilViewController.xib */; };
 		D7F6720C26D573800091B47A /* OptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F6720A26D573800091B47A /* OptionsTableViewCell.swift */; };
 		D7F6720D26D573800091B47A /* OptionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7F6720B26D573800091B47A /* OptionsTableViewCell.xib */; };
 		D7F6721826D577960091B47A /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F6721726D577960091B47A /* Option.swift */; };
@@ -76,6 +78,8 @@
 		D79F89F926E8E48900659267 /* ExposicionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExposicionTableViewCell.xib; sourceTree = "<group>"; };
 		D79F89FF26E8E9F800659267 /* ExposicionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposicionesViewController.swift; sourceTree = "<group>"; };
 		D79F8A0426E8EAA400659267 /* Exposicion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exposicion.swift; sourceTree = "<group>"; };
+		D79F8A0A26E8F4AA00659267 /* DatosPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosPerfilViewController.swift; sourceTree = "<group>"; };
+		D79F8A0B26E8F4AA00659267 /* DatosPerfilViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatosPerfilViewController.xib; sourceTree = "<group>"; };
 		D7F6720A26D573800091B47A /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
 		D7F6720B26D573800091B47A /* OptionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionsTableViewCell.xib; sourceTree = "<group>"; };
 		D7F6721726D577960091B47A /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
@@ -204,6 +208,7 @@
 		D708E91826D31C9A00CFD79D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D79F8A0926E8F48000659267 /* ViewControllers */,
 				D7F6720926D5736E0091B47A /* Cells */,
 				D708E8EA26D31C5D00CFD79D /* Main.storyboard */,
 			);
@@ -217,6 +222,15 @@
 				D79F8A0426E8EAA400659267 /* Exposicion.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D79F8A0926E8F48000659267 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D79F8A0A26E8F4AA00659267 /* DatosPerfilViewController.swift */,
+				D79F8A0B26E8F4AA00659267 /* DatosPerfilViewController.xib */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		D7F6720926D5736E0091B47A /* Cells */ = {
@@ -343,6 +357,7 @@
 				D79F89F426E822A700659267 /* GoogleService-Info.plist in Resources */,
 				D708E8EE26D31C6500CFD79D /* Assets.xcassets in Resources */,
 				D79F89FB26E8E48900659267 /* ExposicionTableViewCell.xib in Resources */,
+				D79F8A0D26E8F4AA00659267 /* DatosPerfilViewController.xib in Resources */,
 				D708E8EC26D31C5D00CFD79D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,6 +492,7 @@
 				D7F6720C26D573800091B47A /* OptionsTableViewCell.swift in Sources */,
 				D708E8E526D31C5D00CFD79D /* AppDelegate.swift in Sources */,
 				D79F89FA26E8E48900659267 /* ExposicionTableViewCell.swift in Sources */,
+				D79F8A0C26E8F4AA00659267 /* DatosPerfilViewController.swift in Sources */,
 				D79F8A0026E8E9F800659267 /* ExposicionesViewController.swift in Sources */,
 				D7F6721826D577960091B47A /* Option.swift in Sources */,
 				D708E91B26D31CAE00CFD79D /* PerfilViewController.swift in Sources */,

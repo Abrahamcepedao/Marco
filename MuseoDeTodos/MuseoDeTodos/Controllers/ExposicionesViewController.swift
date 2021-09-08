@@ -49,5 +49,10 @@ class ExposicionesViewController: UIViewController, UITableViewDelegate, UITable
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//          let exposicion = exposiciones[indexPath.row]
+        
+    }
 
 }
