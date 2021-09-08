@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>639384979549-es8o2m5kppc6up7n67c346monlmdu76v.apps.googleusercontent.com</string>
+	<string>639384979549-2v9t5l9johchh06m6qbobn6dhjn0e5th.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.639384979549-es8o2m5kppc6up7n67c346monlmdu76v</string>
+	<string>com.googleusercontent.apps.639384979549-2v9t5l9johchh06m6qbobn6dhjn0e5th</string>
 	<key>API_KEY</key>
 	<string>AIzaSyANTDjrdda-F7E4_txgjU05yNYJhKyao7o</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>mx.dfuture.MuseoDeTodos</string>
+	<string>dfuture.mx.MuseoDeTodos</string>
 	<key>PROJECT_ID</key>
 	<string>museo-de-todos</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:639384979549:ios:3ad7c95142745a658265b4</string>
+	<string>1:639384979549:ios:8a4f09810715cbb88265b4</string>
 </dict>
 </plist>

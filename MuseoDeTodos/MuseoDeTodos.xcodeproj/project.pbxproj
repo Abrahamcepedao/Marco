@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,7 +18,13 @@
 		D708E8FC26D31C6600CFD79D /* MuseoDeTodosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D708E8FB26D31C6600CFD79D /* MuseoDeTodosTests.swift */; };
 		D708E90726D31C6600CFD79D /* MuseoDeTodosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D708E90626D31C6600CFD79D /* MuseoDeTodosUITests.swift */; };
 		D708E91B26D31CAE00CFD79D /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D708E91A26D31CAE00CFD79D /* PerfilViewController.swift */; };
-		D7311F0826E7F29300F02818 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7311F0726E7F29300F02818 /* GoogleService-Info.plist */; };
+		D79F89DE26E8125000659267 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79F89DD26E8125000659267 /* SignUpViewController.swift */; };
+		D79F89E326E8133800659267 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79F89E226E8133800659267 /* LoginViewController.swift */; };
+		D79F89F426E822A700659267 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D79F89F326E822A700659267 /* GoogleService-Info.plist */; };
+		D79F89FA26E8E48900659267 /* ExposicionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79F89F826E8E48900659267 /* ExposicionTableViewCell.swift */; };
+		D79F89FB26E8E48900659267 /* ExposicionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D79F89F926E8E48900659267 /* ExposicionTableViewCell.xib */; };
+		D79F8A0026E8E9F800659267 /* ExposicionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79F89FF26E8E9F800659267 /* ExposicionesViewController.swift */; };
+		D79F8A0526E8EAA400659267 /* Exposicion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79F8A0426E8EAA400659267 /* Exposicion.swift */; };
 		D7F6720C26D573800091B47A /* OptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F6720A26D573800091B47A /* OptionsTableViewCell.swift */; };
 		D7F6720D26D573800091B47A /* OptionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7F6720B26D573800091B47A /* OptionsTableViewCell.xib */; };
 		D7F6721826D577960091B47A /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F6721726D577960091B47A /* Option.swift */; };
@@ -63,7 +69,13 @@
 		D708E90626D31C6600CFD79D /* MuseoDeTodosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseoDeTodosUITests.swift; sourceTree = "<group>"; };
 		D708E90826D31C6600CFD79D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D708E91A26D31CAE00CFD79D /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
-		D7311F0726E7F29300F02818 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D79F89DD26E8125000659267 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D79F89E226E8133800659267 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D79F89F326E822A700659267 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D79F89F826E8E48900659267 /* ExposicionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposicionTableViewCell.swift; sourceTree = "<group>"; };
+		D79F89F926E8E48900659267 /* ExposicionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExposicionTableViewCell.xib; sourceTree = "<group>"; };
+		D79F89FF26E8E9F800659267 /* ExposicionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposicionesViewController.swift; sourceTree = "<group>"; };
+		D79F8A0426E8EAA400659267 /* Exposicion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exposicion.swift; sourceTree = "<group>"; };
 		D7F6720A26D573800091B47A /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
 		D7F6720B26D573800091B47A /* OptionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionsTableViewCell.xib; sourceTree = "<group>"; };
 		D7F6721726D577960091B47A /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
@@ -109,7 +121,6 @@
 				18E3437232CC940907D0B44B /* Pods-MuseoDeTodosTests.debug.xcconfig */,
 				2E587654C38EC4932605DFEC /* Pods-MuseoDeTodosTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -156,7 +167,7 @@
 				D708E8ED26D31C6500CFD79D /* Assets.xcassets */,
 				D708E8EF26D31C6500CFD79D /* LaunchScreen.storyboard */,
 				D708E8F226D31C6500CFD79D /* Info.plist */,
-				D7311F0726E7F29300F02818 /* GoogleService-Info.plist */,
+				D79F89F326E822A700659267 /* GoogleService-Info.plist */,
 			);
 			path = MuseoDeTodos;
 			sourceTree = "<group>";
@@ -183,6 +194,9 @@
 			isa = PBXGroup;
 			children = (
 				D708E91A26D31CAE00CFD79D /* PerfilViewController.swift */,
+				D79F89DD26E8125000659267 /* SignUpViewController.swift */,
+				D79F89E226E8133800659267 /* LoginViewController.swift */,
+				D79F89FF26E8E9F800659267 /* ExposicionesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -200,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				D7F6721726D577960091B47A /* Option.swift */,
+				D79F8A0426E8EAA400659267 /* Exposicion.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -209,6 +224,8 @@
 			children = (
 				D7F6720A26D573800091B47A /* OptionsTableViewCell.swift */,
 				D7F6720B26D573800091B47A /* OptionsTableViewCell.xib */,
+				D79F89F826E8E48900659267 /* ExposicionTableViewCell.swift */,
+				D79F89F926E8E48900659267 /* ExposicionTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -323,8 +340,9 @@
 			files = (
 				D7F6720D26D573800091B47A /* OptionsTableViewCell.xib in Resources */,
 				D708E8F126D31C6500CFD79D /* LaunchScreen.storyboard in Resources */,
-				D7311F0826E7F29300F02818 /* GoogleService-Info.plist in Resources */,
+				D79F89F426E822A700659267 /* GoogleService-Info.plist in Resources */,
 				D708E8EE26D31C6500CFD79D /* Assets.xcassets in Resources */,
+				D79F89FB26E8E48900659267 /* ExposicionTableViewCell.xib in Resources */,
 				D708E8EC26D31C5D00CFD79D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,8 +471,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D79F8A0526E8EAA400659267 /* Exposicion.swift in Sources */,
+				D79F89E326E8133800659267 /* LoginViewController.swift in Sources */,
+				D79F89DE26E8125000659267 /* SignUpViewController.swift in Sources */,
 				D7F6720C26D573800091B47A /* OptionsTableViewCell.swift in Sources */,
 				D708E8E526D31C5D00CFD79D /* AppDelegate.swift in Sources */,
+				D79F89FA26E8E48900659267 /* ExposicionTableViewCell.swift in Sources */,
+				D79F8A0026E8E9F800659267 /* ExposicionesViewController.swift in Sources */,
 				D7F6721826D577960091B47A /* Option.swift in Sources */,
 				D708E91B26D31CAE00CFD79D /* PerfilViewController.swift in Sources */,
 				D708E8E726D31C5D00CFD79D /* SceneDelegate.swift in Sources */,
