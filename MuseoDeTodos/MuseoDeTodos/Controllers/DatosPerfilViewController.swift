@@ -6,9 +6,15 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseFirestore
 
 class DatosPerfilViewController: UIViewController {
     
+    //firebase
+    var db: Firestore!
+    
+    //outlets
     @IBOutlet weak var firstnameTF: UITextField!
     @IBOutlet weak var secondnameTF: UITextField!
     @IBOutlet weak var lastnameTF: UITextField!
@@ -27,9 +33,21 @@ class DatosPerfilViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //setup firebase
+        setupFirebase()
+        
         // setup pickers
         setupPicker()
         setupDatePicker()
+    }
+    
+    func setupFirebase(){
+        // [START setup]
+        let settings = FirestoreSettings()
+
+        Firestore.firestore().settings = settings
+        // [END setup]
+        db = Firestore.firestore()
     }
     
     func setupPicker(){
@@ -90,7 +108,6 @@ class DatosPerfilViewController: UIViewController {
     }
     
     @objc func donePressed2(){
-    
         self.view.endEditing(true)
     }
     
@@ -100,6 +117,65 @@ class DatosPerfilViewController: UIViewController {
         print(lastnameTF.text ?? "")
         print(sexTF.text ?? "")
         print(birthdateTF.text ?? "")
+        print(Auth.auth().currentUser?.uid ?? "")
+        
+        guard let uid = Auth.auth().currentUser?.uid else {
+            let alert = UIAlertController(title: "Sucedió un error..", message: "No ha iniciado sesión", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                    NSLog("The \"OK\" alert occured.")
+                }))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        
+        guard let firstname = firstnameTF.text else  {
+            let alert = UIAlertController(title: "Sucedió un error..", message: "Ingrese su primer nombre", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                    NSLog("The \"OK\" alert occured.")
+                }))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        
+        guard let lastname = lastnameTF.text else  {
+            let alert = UIAlertController(title: "Sucedió un error..", message: "Ingrese sus apellidos", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                    NSLog("The \"OK\" alert occured.")
+                }))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        
+        guard let sex = sexTF.text else  {
+            let alert = UIAlertController(title: "Sucedió un error..", message: "Seleccione su sexo", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                    NSLog("The \"OK\" alert occured.")
+                }))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        
+        guard let birthdate = birthdateTF.text else  {
+            let alert = UIAlertController(title: "Sucedió un error..", message: "Seleccione su fecha de nacimiento", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                    NSLog("The \"OK\" alert occured.")
+                }))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        
+        print("creating user in firestore db")
+        db.collection("users").document(uid).setData([
+            "firstname": firstname,
+            "secondname": secondnameTF.text ?? "",
+            "lastnames": lastname,
+            "sex": sex,
+            "birthdate": birthdate,
+        ])
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "tabarController") as! UITabBarController
+        self.present(nextViewController, animated:true, completion:nil)
     }
     
 
