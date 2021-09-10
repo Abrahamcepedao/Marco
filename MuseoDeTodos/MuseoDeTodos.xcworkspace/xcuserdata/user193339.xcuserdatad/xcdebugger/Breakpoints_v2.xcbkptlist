@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B747493C-866F-4838-9396-47098A391058"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "191CB8BA-E614-45F7-93C0-841E16F5D800"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MuseoDeTodos/Controllers/ExposicionesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "ExposicionesViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "191CB8BA-E614-45F7-93C0-841E16F5D800 - d22dfe0084bf47e8"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MuseoDeTodos.ExposicionesViewController.exposicionesTV.getter : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "MuseoDeTodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user193339/Documents/GitHub/Marco/MuseoDeTodos/MuseoDeTodos/Controllers/ExposicionesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "191CB8BA-E614-45F7-93C0-841E16F5D800 - 7561cdcb1d7933fc"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MuseoDeTodos.ExposicionesViewController.exposicionesTV.setter : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "MuseoDeTodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user193339/Documents/GitHub/Marco/MuseoDeTodos/MuseoDeTodos/Controllers/ExposicionesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "191CB8BA-E614-45F7-93C0-841E16F5D800 - 87b73e418f8ae2fa"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MuseoDeTodos.ExposicionesViewController.exposicionesTV.modify : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "MuseoDeTodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user193339/Documents/GitHub/Marco/MuseoDeTodos/MuseoDeTodos/Controllers/ExposicionesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  uuid = "191CB8BA-E614-45F7-93C0-841E16F5D800 - e024b8180110c6da"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MuseoDeTodos.ExposicionesViewController.exposicionesTV.modify : Swift.Optional&lt;__C.UITableView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MuseoDeTodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user193339/Documents/GitHub/Marco/MuseoDeTodos/MuseoDeTodos/Controllers/ExposicionesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "191CB8BA-E614-45F7-93C0-841E16F5D800 - c5b9841c90884c43"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MuseoDeTodos.ExposicionesViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; MuseoDeTodos.ExposicionesViewController"
+                  moduleName = "MuseoDeTodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user193339/Documents/GitHub/Marco/MuseoDeTodos/MuseoDeTodos/Controllers/ExposicionesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "322">
+               </Location>
+               <Location
+                  uuid = "191CB8BA-E614-45F7-93C0-841E16F5D800 - 35ad5b6034abc0d0"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MuseoDeTodos.ExposicionesViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MuseoDeTodos.ExposicionesViewController&gt;"
+                  moduleName = "MuseoDeTodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user193339/Documents/GitHub/Marco/MuseoDeTodos/MuseoDeTodos/Controllers/ExposicionesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "236">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "981F45A4-ADD3-43F9-94A2-770A76FAAB7F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MuseoDeTodos/Controllers/ExposicionesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "fetchData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
