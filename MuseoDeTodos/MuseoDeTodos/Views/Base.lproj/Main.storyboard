@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e0D-ry-F8d">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Image references" minToolsVersion="12.0"/>
@@ -142,6 +142,7 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                                     <constraint firstItem="yh8-h4-wmM" firstAttribute="centerX" secondItem="VsJ-hr-hbb" secondAttribute="centerX" id="Crg-B8-CaO"/>
                                     <constraint firstItem="VsJ-hr-hbb" firstAttribute="top" secondItem="YCs-tB-ZfA" secondAttribute="top" id="GZF-fh-UhW"/>
                                     <constraint firstItem="yh8-h4-wmM" firstAttribute="top" secondItem="RHA-Bq-dsm" secondAttribute="bottom" constant="4" id="KN1-qw-Nhz"/>
+                                    <constraint firstAttribute="height" constant="316" id="T8S-dr-CVX"/>
                                     <constraint firstItem="yh8-h4-wmM" firstAttribute="leading" secondItem="RHA-Bq-dsm" secondAttribute="leading" id="efD-VB-68n"/>
                                     <constraint firstItem="RHA-Bq-dsm" firstAttribute="leading" secondItem="YCs-tB-ZfA" secondAttribute="leading" constant="25" id="o8a-bJ-l8I"/>
                                     <constraint firstAttribute="bottom" secondItem="yh8-h4-wmM" secondAttribute="bottom" constant="35" id="qRM-nA-kCv"/>
@@ -150,10 +151,10 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zAE-SJ-4JS">
-                                <rect key="frame" x="20" y="487" width="374" height="203"/>
+                                <rect key="frame" x="20" y="486" width="374" height="222"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMAGEN" translatesAutoresizingMaskIntoConstraints="NO" id="Qhw-jP-Tcl">
-                                        <rect key="frame" x="8" y="8" width="358" height="195"/>
+                                        <rect key="frame" x="8" y="8" width="358" height="214"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -161,6 +162,7 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                                     <constraint firstItem="Qhw-jP-Tcl" firstAttribute="top" secondItem="zAE-SJ-4JS" secondAttribute="topMargin" id="5il-p6-Bdx"/>
                                     <constraint firstItem="Qhw-jP-Tcl" firstAttribute="leading" secondItem="zAE-SJ-4JS" secondAttribute="leadingMargin" id="Am6-0d-lna"/>
                                     <constraint firstAttribute="bottom" secondItem="Qhw-jP-Tcl" secondAttribute="bottom" id="gd4-gn-TtL"/>
+                                    <constraint firstAttribute="height" constant="222" id="gft-fb-zuC"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -168,14 +170,18 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                         <color key="backgroundColor" red="0.95686274509803915" green="0.92941176470588238" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="YCs-tB-ZfA" secondAttribute="bottom" constant="435" id="3c9-Cc-imh"/>
+                            <constraint firstItem="zAE-SJ-4JS" firstAttribute="top" secondItem="YCs-tB-ZfA" secondAttribute="bottom" constant="25" id="5Ir-N8-aha"/>
+                            <constraint firstItem="YCs-tB-ZfA" firstAttribute="top" secondItem="Hbi-Lj-oiD" secondAttribute="bottom" constant="25" id="Fra-Md-HcW"/>
+                            <constraint firstItem="3Kq-Yi-HLX" firstAttribute="trailing" secondItem="YCs-tB-ZfA" secondAttribute="trailing" constant="20" id="HdR-Q3-NAi"/>
                             <constraint firstItem="YCs-tB-ZfA" firstAttribute="centerX" secondItem="Hbi-Lj-oiD" secondAttribute="centerX" id="Lpm-dd-vqs"/>
-                            <constraint firstItem="zAE-SJ-4JS" firstAttribute="top" secondItem="YCs-tB-ZfA" secondAttribute="bottom" constant="26" id="Ozd-U5-CXb"/>
                             <constraint firstItem="Hbi-Lj-oiD" firstAttribute="top" secondItem="Tsm-PQ-HEi" secondAttribute="top" id="SVH-uM-Qmx"/>
                             <constraint firstItem="Hbi-Lj-oiD" firstAttribute="leading" secondItem="3Kq-Yi-HLX" secondAttribute="leading" id="auk-nG-ce5"/>
                             <constraint firstItem="YCs-tB-ZfA" firstAttribute="top" secondItem="Hbi-Lj-oiD" secondAttribute="bottom" constant="25" id="f0D-n7-iX9"/>
                             <constraint firstItem="YCs-tB-ZfA" firstAttribute="leading" secondItem="Tsm-PQ-HEi" secondAttribute="leadingMargin" id="fSC-01-gTI"/>
                             <constraint firstItem="YCs-tB-ZfA" firstAttribute="leading" secondItem="zAE-SJ-4JS" secondAttribute="leading" id="iEI-kw-pk0"/>
-                            <constraint firstItem="3Kq-Yi-HLX" firstAttribute="bottom" secondItem="zAE-SJ-4JS" secondAttribute="bottom" constant="123" id="qh5-XS-CA4"/>
+                            <constraint firstItem="3Kq-Yi-HLX" firstAttribute="trailing" secondItem="zAE-SJ-4JS" secondAttribute="trailing" constant="20" id="lWc-yA-dJY"/>
+                            <constraint firstItem="zAE-SJ-4JS" firstAttribute="leading" secondItem="3Kq-Yi-HLX" secondAttribute="leading" constant="20" id="lfL-CS-Col"/>
+                            <constraint firstItem="YCs-tB-ZfA" firstAttribute="leading" secondItem="3Kq-Yi-HLX" secondAttribute="leading" constant="20" id="o7z-f5-Zic"/>
                             <constraint firstItem="YCs-tB-ZfA" firstAttribute="trailing" secondItem="zAE-SJ-4JS" secondAttribute="trailing" id="vvh-yi-PZc"/>
                             <constraint firstItem="Hbi-Lj-oiD" firstAttribute="centerX" secondItem="Tsm-PQ-HEi" secondAttribute="centerX" id="yyg-GB-lbS"/>
                         </constraints>
@@ -210,7 +216,7 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                                 <rect key="frame" x="0.0" y="204" width="414" height="692"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcN-v7-5hZ">
-                                        <rect key="frame" x="8" y="221.66666666666669" width="398" height="249"/>
+                                        <rect key="frame" x="8" y="221.5" width="398" height="249"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="hww-3b-ijc">
                                                 <rect key="frame" x="8" y="20" width="382" height="34"/>
@@ -223,12 +229,12 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar contraseña" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="t0N-tM-MVg">
-                                                <rect key="frame" x="8" y="111.99999999999994" width="382" height="34"/>
+                                                <rect key="frame" x="8" y="112" width="382" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGk-Rb-0gW">
-                                                <rect key="frame" x="8" y="157.99999999999994" width="382" height="40"/>
+                                                <rect key="frame" x="8" y="158" width="382" height="40"/>
                                                 <color key="backgroundColor" red="0.92351055150000005" green="0.027997247869999999" blue="0.60786813500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="ylA-jy-pYC"/>
@@ -240,7 +246,7 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5XQ-cf-6TI">
-                                                <rect key="frame" x="8" y="209.99999999999994" width="382" height="27"/>
+                                                <rect key="frame" x="8" y="210" width="382" height="27"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="27" id="GxS-r8-dC9"/>
                                                 </constraints>
@@ -271,11 +277,22 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                                             <constraint firstItem="5XQ-cf-6TI" firstAttribute="top" secondItem="UGk-Rb-0gW" secondAttribute="bottom" constant="12" id="zLd-Rr-8R3"/>
                                         </constraints>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MARCO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNx-7x-EPY">
+                                        <rect key="frame" x="149.5" y="8" width="115" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="8bV-LH-Cmc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="pcN-v7-5hZ" secondAttribute="trailing" constant="8" id="AJi-Hp-WJ3"/>
                                     <constraint firstItem="pcN-v7-5hZ" firstAttribute="centerY" secondItem="GhM-zV-KdV" secondAttribute="centerY" id="efx-7C-d82"/>
+                                    <constraint firstItem="kNx-7x-EPY" firstAttribute="top" secondItem="GhM-zV-KdV" secondAttribute="top" constant="8" id="fDn-Dv-Vdc"/>
                                     <constraint firstItem="pcN-v7-5hZ" firstAttribute="leading" secondItem="GhM-zV-KdV" secondAttribute="leading" constant="8" id="giS-tO-RGO"/>
+                                    <constraint firstItem="kNx-7x-EPY" firstAttribute="centerX" secondItem="GhM-zV-KdV" secondAttribute="centerX" id="pLg-Ov-oMd"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -574,13 +591,13 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oGl-KT-W4I">
                                         <rect key="frame" x="20" y="6" width="64" height="88"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datos de Perfil" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ady-CH-31y">
-                                                <rect key="frame" x="7.6666666666666643" y="53" width="49" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datos Perfil" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ady-CH-31y">
+                                                <rect key="frame" x="7.5" y="53" width="49" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="49" id="CbK-8x-W0k"/>
                                                     <constraint firstAttribute="height" constant="30" id="q8O-Mr-ls1"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -610,13 +627,13 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Lz-4Q-LhJ">
                                                 <rect key="frame" x="8" y="6" width="64" height="88"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datos de Perfil" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sop-4R-kRs">
-                                                        <rect key="frame" x="7.6666666666666714" y="53" width="49" height="30"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Centro ayuda" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sop-4R-kRs">
+                                                        <rect key="frame" x="7.5" y="53" width="49" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="KXx-Ho-RwW"/>
                                                             <constraint firstAttribute="width" constant="49" id="b1d-SJ-Pl7"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -643,13 +660,13 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPc-CO-y2t">
                                                 <rect key="frame" x="120" y="6" width="64" height="88"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datos de Perfil" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPi-iW-W51">
-                                                        <rect key="frame" x="7.6666666666666572" y="53" width="49" height="30"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIstorial reservas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPi-iW-W51">
+                                                        <rect key="frame" x="7.5" y="53" width="49" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="9A9-16-nVU"/>
                                                             <constraint firstAttribute="width" constant="49" id="q1j-QD-SrX"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -688,13 +705,13 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f5z-Ha-Kzx">
                                         <rect key="frame" x="300" y="6" width="64" height="88"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datos de Perfil" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKg-W0-Swb">
-                                                <rect key="frame" x="7.6666666666666856" y="53" width="49" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Métodos pago" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKg-W0-Swb">
+                                                <rect key="frame" x="7.5" y="53" width="49" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="0Iw-Io-y3N"/>
                                                     <constraint firstAttribute="width" constant="49" id="Aih-jt-JR3"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -864,7 +881,7 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                                 <rect key="frame" x="0.0" y="204" width="414" height="692"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wZ8-Mo-a99">
-                                        <rect key="frame" x="8" y="247.66666666666669" width="398" height="197"/>
+                                        <rect key="frame" x="8" y="247.5" width="398" height="197"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="nlL-fa-Tmw">
                                                 <rect key="frame" x="8" y="20" width="382" height="34"/>
@@ -872,12 +889,12 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="eLW-1V-gy8">
-                                                <rect key="frame" x="8" y="65.999999999999943" width="382" height="34"/>
+                                                <rect key="frame" x="8" y="66" width="382" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hV-Z6-y9t">
-                                                <rect key="frame" x="8" y="163.99999999999994" width="382" height="27"/>
+                                                <rect key="frame" x="8" y="164" width="382" height="27"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="27" id="oGv-QQ-gYy"/>
                                                 </constraints>
@@ -889,7 +906,7 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUZ-KA-Pec">
-                                                <rect key="frame" x="8" y="111.99999999999994" width="382" height="40"/>
+                                                <rect key="frame" x="8" y="112" width="382" height="40"/>
                                                 <color key="backgroundColor" red="0.92351055150000005" green="0.027997247869999999" blue="0.60786813500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="VuC-we-Rcd"/>
@@ -917,11 +934,23 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                                             <constraint firstItem="nlL-fa-Tmw" firstAttribute="top" secondItem="wZ8-Mo-a99" secondAttribute="top" constant="20" id="yav-t3-uOj"/>
                                         </constraints>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MARCO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZT-hQ-FeY">
+                                        <rect key="frame" x="149.5" y="8" width="115" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="VBp-Om-S52"/>
+                                            <constraint firstAttribute="height" constant="36" id="xU9-yn-Vcq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="wZ8-Mo-a99" firstAttribute="centerY" secondItem="Z0A-yk-Fx1" secondAttribute="centerY" id="ekp-GT-jdf"/>
+                                    <constraint firstItem="lZT-hQ-FeY" firstAttribute="top" secondItem="Z0A-yk-Fx1" secondAttribute="top" constant="8" id="gRk-U4-9lu"/>
                                     <constraint firstItem="wZ8-Mo-a99" firstAttribute="leading" secondItem="Z0A-yk-Fx1" secondAttribute="leading" constant="8" id="qMQ-CG-T4M"/>
                                     <constraint firstAttribute="trailing" secondItem="wZ8-Mo-a99" secondAttribute="trailing" constant="8" id="xvh-Yo-dMd"/>
+                                    <constraint firstItem="lZT-hQ-FeY" firstAttribute="centerX" secondItem="Z0A-yk-Fx1" secondAttribute="centerX" id="yoy-KN-azm"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -949,7 +978,7 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="c8t-nL-HdH"/>
+        <segue reference="v09-Hh-NSS"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="IMAGEN" width="357" height="214"/>
@@ -961,8 +990,8 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="logo" width="2444" height="2444"/>
-        <image name="person" width="3325" height="3412"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person" width="3325" height="3412"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="ticket" catalog="system" width="128" height="84"/>
         <image name="ticket.fill" catalog="system" width="128" height="84"/>
