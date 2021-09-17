@@ -36,7 +36,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text=" 16 OCT 2020 - 11 ABR 2021  " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mCt-qh-Qqc">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text=" 16 OCT 2020 - 11 ABR 2021  " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mCt-qh-Qqc">
                                 <rect key="frame" x="20" y="216" width="202" height="33"/>
                                 <color key="backgroundColor" red="0.92351055150000005" green="0.027997247869999999" blue="0.60786813500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

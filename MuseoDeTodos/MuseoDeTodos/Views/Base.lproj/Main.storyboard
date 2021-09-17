@@ -69,10 +69,7 @@
                             <constraint firstItem="L1A-TI-RRP" firstAttribute="top" secondItem="q8e-o9-aWE" secondAttribute="bottom" constant="16" id="srO-JT-PbZ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" id="MkZ-0V-iXf">
-                        <imageReference key="image" image="house" catalog="system" symbolScale="large"/>
-                        <imageReference key="selectedImage" image="house.fill" catalog="system" symbolScale="large"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="KHF-dL-EHw"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="exposicionesTV" destination="L1A-TI-RRP" id="K95-J2-C89"/>
@@ -80,7 +77,38 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="902.89855072463774" y="-1149.1071428571429"/>
+            <point key="canvasLocation" x="1813.0434782608697" y="-1149.1071428571429"/>
+        </scene>
+        <!--Exposiciones2 View Controller-->
+        <scene sceneID="ypO-Cc-7fo">
+            <objects>
+                <viewController storyboardIdentifier="Exposiciones2ViewController" id="yiS-Xs-HRO" customClass="Exposiciones2ViewController" customModule="MuseoDeTodos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fyg-aR-69b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBR-DC-viE">
+                                <rect key="frame" x="186" y="438" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rzb-Fm-OkR"/>
+                        <color key="backgroundColor" red="0.95680779220000001" green="0.92907702920000002" blue="0.904763341" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nBR-DC-viE" firstAttribute="top" secondItem="Rzb-Fm-OkR" secondAttribute="top" constant="394" id="3V6-HY-MU5"/>
+                            <constraint firstItem="nBR-DC-viE" firstAttribute="centerY" secondItem="fyg-aR-69b" secondAttribute="centerY" id="DGH-Ee-vlA"/>
+                            <constraint firstItem="nBR-DC-viE" firstAttribute="centerX" secondItem="fyg-aR-69b" secondAttribute="centerX" id="WGz-bY-HAk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lbl_Title" destination="nBR-DC-viE" id="h52-mR-5FN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q7a-9I-g70" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2655.072463768116" y="-1149.1071428571429"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="zCW-ZP-FX0">
@@ -478,7 +506,7 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                         <color key="selectedImageTintColor" red="0.92549019610000005" green="0.090196078430000007" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="vxX-O2-FbC"/>
+                        <segue destination="5Ky-S3-StN" kind="relationship" relationship="viewControllers" id="vxX-O2-FbC"/>
                         <segue destination="jl7-YG-gja" kind="relationship" relationship="viewControllers" id="Ui7-8A-9xr"/>
                         <segue destination="3cg-ES-DK3" kind="relationship" relationship="viewControllers" id="VIc-XJ-Fy7"/>
                         <segue destination="uEa-gd-e8P" kind="relationship" relationship="viewControllers" id="RDB-mR-tUE"/>
@@ -976,9 +1004,33 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
             </objects>
             <point key="canvasLocation" x="-954" y="88"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DE3-gl-UrD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="5Ky-S3-StN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" id="MkZ-0V-iXf">
+                        <imageReference key="image" image="house" catalog="system" symbolScale="large"/>
+                        <imageReference key="selectedImage" image="house.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SMf-Gx-hEQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CKr-Lx-VVD">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="N6h-EP-MGy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NLh-lW-Baq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902.89855072463774" y="-1149.1071428571429"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="v09-Hh-NSS"/>
+        <segue reference="c8t-nL-HdH"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="IMAGEN" width="357" height="214"/>
@@ -990,8 +1042,8 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="logo" width="2444" height="2444"/>
-        <image name="person" catalog="system" width="128" height="117"/>
         <image name="person" width="3325" height="3412"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="ticket" catalog="system" width="128" height="84"/>
         <image name="ticket.fill" catalog="system" width="128" height="84"/>
