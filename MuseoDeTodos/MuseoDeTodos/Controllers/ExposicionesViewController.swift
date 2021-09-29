@@ -32,6 +32,8 @@ class ExposicionesViewController: UIViewController, UITableViewDelegate, UITable
         fetchData()
     }
     
+    
+    
     func fetchData() {
         db.collection("exposicion").addSnapshotListener { (querySnapshot, error) in
             guard let documents = querySnapshot?.documents else {
@@ -90,8 +92,10 @@ class ExposicionesViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//          let exposicion = exposiciones[indexPath.row]
-        
+        if let vc = storyboard?.instantiateViewController(identifier: "Exposiciones2ViewController") as?
+            Exposiciones2ViewController{
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
 
 }
