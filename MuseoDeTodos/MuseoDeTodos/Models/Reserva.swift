@@ -10,8 +10,11 @@ import Foundation
 
 struct Reserva {
     let title: String
-    let subtitle: String
     let dias: String
     let horas: String
     let image: String?
+    let costoA: Int? //adultos
+    let costoN: Int? //niiños
+    let costoE: Int? //estudiantes
+    let costo: Int? //costo general
 }

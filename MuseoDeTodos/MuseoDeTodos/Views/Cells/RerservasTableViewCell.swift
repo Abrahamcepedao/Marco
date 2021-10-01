@@ -12,7 +12,6 @@ class RerservasTableViewCell: UITableViewCell {
     
     @IBOutlet weak var imagen: UIImageView!
     @IBOutlet weak var titulo: UILabel!
-    @IBOutlet weak var subtitulo: UILabel!
     @IBOutlet weak var infoBtn: UIButton!
     @IBOutlet weak var dias: UILabel!
     @IBOutlet weak var horas: UILabel!
