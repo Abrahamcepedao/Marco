@@ -12,9 +12,13 @@ class ReservasViewController: UIViewController {
     @IBOutlet weak var reservasTV: UITableView!
     
     var reservas: [Reserva] = [
-        Reserva(title: "Restaurante", subtitle: "Menu contemporáneo", dias: "Martes a domingo", horas: "11am a 3pm", image: "img"),
-        Reserva(title: "Visita guiada", subtitle: "Menu contemporáneo", dias: "Martes a domingo", horas: "11am a 3pm", image: "img"),
-        Reserva(title: "Visita guiada para niños ", subtitle: "Menu contemporáneo", dias: "Martes a domingo", horas: "11am a 3pm", image: "img")
+        Reserva(title: "Restaurante", dias: "Martes a domingo", horas: "1pm a 6pm", image: "img"),
+        Reserva(title: "Visita guiada", dias: "Lunes a domingo", horas: "10am a 6pm", image: "img2"),
+        Reserva(title: "Visita guiada para niños ",  dias: "Lunes a domingo", horas: "10am a 6pm", image: "img2"),
+        Reserva(title: "Boletos", dias: "Lunes  a domingo", horas: "10am a 6pm", image: "img2"),
+        Reserva(title: "Cursos para niños",  dias: "Lunes 5 al 9 de abril", horas: "11am a 3pm", image: "img3"),
+        Reserva(title: "Cursos para adultos ", dias: "Lunes 15 al 21 de octubre", horas: "11am a 3pm", image: "img2"),
+        Reserva(title: "Lengua de señas mexicana", dias: "Lunes 15 al 21 de octubre", horas: "11am a 3pm", image: "img4")
     ]
     
     override func viewDidLoad() {
@@ -30,6 +34,7 @@ class ReservasViewController: UIViewController {
         let nib = UINib(nibName: "RerservasTableViewCell", bundle: nil)
         reservasTV.register(nib, forCellReuseIdentifier: "reservaCell")
     }
+    
 
 }
 
@@ -43,11 +48,9 @@ extension ReservasViewController: UITableViewDelegate, UITableViewDataSource {
         
         let reserva = reservas[indexPath.row]
         cell.titulo.text = reserva.title
-        cell.subtitulo.text = reserva.subtitle
         cell.dias.text = reserva.dias
         cell.horas.text = reserva.horas
         cell.imagen.image = UIImage(named: reserva.image ?? "img")
-        
         return cell
     }
     
@@ -56,6 +59,7 @@ extension ReservasViewController: UITableViewDelegate, UITableViewDataSource {
             vc.name = reservas[indexPath.row].title
             self.navigationController?.pushViewController(vc, animated: true)
         }
+        
     }
     
 }
