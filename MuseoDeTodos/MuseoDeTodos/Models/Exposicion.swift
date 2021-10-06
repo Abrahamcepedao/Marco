@@ -9,9 +9,16 @@ import Foundation
 
 
 struct Exposicion {
+    let id: String
     let title: String
-    let subtitle: String
-    let firstDate: String
-    let lastDate: String
-    let image: String?
+    let startDate: String
+    let description: String
+    let cerraduria: String
+    let museografia: String
+    let salas: String
+    let tecnica: String
+    let obras: String
+    let recorridoVirtual: String
+    let videoUrl: String?
 }
+

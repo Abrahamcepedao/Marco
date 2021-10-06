@@ -15,8 +15,6 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var confirmPasswordTF: UITextField!
     @IBOutlet weak var createBtn: UIButton!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

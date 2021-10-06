@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1B50CEE8DE8AD71FF4D53FEA /* Pods_MuseoDeTodosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF127D76B21D836D4DF0BF69 /* Pods_MuseoDeTodosTests.framework */; };
 		314D8A7C0C950746D78588FB /* Pods_MuseoDeTodos_MuseoDeTodosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A441B721F1597A349A2A57EF /* Pods_MuseoDeTodos_MuseoDeTodosUITests.framework */; };
-		3200A6D326EA4C2600255F07 /* ExposicionTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3200A6D226EA4C2600255F07 /* ExposicionTableViewModel.swift */; };
 		324D343F26F551E00051F15D /* Exposiciones2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D343E26F551E00051F15D /* Exposiciones2ViewController.swift */; };
 		68B028D67AD838EFBC19F743 /* Pods_MuseoDeTodos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750493A77A4A867DBD94CE72 /* Pods_MuseoDeTodos.framework */; };
 		D708E8E526D31C5D00CFD79D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D708E8E426D31C5D00CFD79D /* AppDelegate.swift */; };
@@ -58,7 +57,6 @@
 /* Begin PBXFileReference section */
 		18E3437232CC940907D0B44B /* Pods-MuseoDeTodosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuseoDeTodosTests.debug.xcconfig"; path = "Target Support Files/Pods-MuseoDeTodosTests/Pods-MuseoDeTodosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2E587654C38EC4932605DFEC /* Pods-MuseoDeTodosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuseoDeTodosTests.release.xcconfig"; path = "Target Support Files/Pods-MuseoDeTodosTests/Pods-MuseoDeTodosTests.release.xcconfig"; sourceTree = "<group>"; };
-		3200A6D226EA4C2600255F07 /* ExposicionTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposicionTableViewModel.swift; sourceTree = "<group>"; };
 		324D343E26F551E00051F15D /* Exposiciones2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exposiciones2ViewController.swift; sourceTree = "<group>"; };
 		750493A77A4A867DBD94CE72 /* Pods_MuseoDeTodos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuseoDeTodos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86669CE8A61540EC0F016FFA /* Pods-MuseoDeTodos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuseoDeTodos.debug.xcconfig"; path = "Target Support Files/Pods-MuseoDeTodos/Pods-MuseoDeTodos.debug.xcconfig"; sourceTree = "<group>"; };
@@ -235,7 +233,6 @@
 			children = (
 				D7F6721726D577960091B47A /* Option.swift */,
 				D79F8A0426E8EAA400659267 /* Exposicion.swift */,
-				3200A6D226EA4C2600255F07 /* ExposicionTableViewModel.swift */,
 				D7A75B4626EAF33400F7443C /* Reserva.swift */,
 			);
 			path = Models;
@@ -510,7 +507,6 @@
 				D7F6721826D577960091B47A /* Option.swift in Sources */,
 				D7A75B3C26EAEFDD00F7443C /* RerservasTableViewCell.swift in Sources */,
 				D708E91B26D31CAE00CFD79D /* PerfilViewController.swift in Sources */,
-				3200A6D326EA4C2600255F07 /* ExposicionTableViewModel.swift in Sources */,
 				D708E8E726D31C5D00CFD79D /* SceneDelegate.swift in Sources */,
 				D7A75B4226EAF29900F7443C /* ReservasViewController.swift in Sources */,
 			);
