@@ -112,6 +112,7 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+<<<<<<< Updated upstream
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
@@ -128,5 +129,7 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+=======
+>>>>>>> Stashed changes
    </Breakpoints>
 </Bucket>

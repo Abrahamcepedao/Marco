@@ -42,14 +42,20 @@ class ExposicionesViewController: UIViewController, UITableViewDelegate, UITable
             self.exposiciones = documents.compactMap { (queryDocumentSnapshot) -> Exposicion in
                 let data = queryDocumentSnapshot.data()
                 
-                let title = data["titulo"] as? String ?? ""
-                let subtitle = data["subtitulo"] as? String ?? ""
-                let firstDate = data["fechaInicial"] as? String ?? ""
-                let lastDate = data["fechaFinal"] as? String ?? ""
-                let image = ""
+                let id = data["id"] as? String ?? ""
+                let title = data["title"] as? String ?? ""
+                let startDate = data["startDate"] as? String ?? ""
+                let description = data["description"] as? String ?? ""
+                let cerraduria = data["cerraduria"] as? String ?? ""
+                let museografia = data["museografia"] as? String ?? ""
+                let salas = data["salas"] as? String ?? ""
+                let tecnica = data["tecnica"] as? String ?? ""
+                let obras = data["obras"] as? String ?? ""
+                let recorridoVirtual = data["recorridoVirtual"] as? String ?? ""
+                let videoUrl = data["videoUrl"] as? String ?? "https://www.youtube.com/watch?v=fv1Q0SPWonk"
                 
                 print(title)
-                return Exposicion(title: title, subtitle: subtitle, firstDate: firstDate, lastDate: lastDate, image: image)
+                return Exposicion(id: id, title: title, startDate: startDate, description: description, cerraduria: cerraduria, museografia: museografia, salas: salas, tecnica: tecnica, obras: obras, recorridoVirtual: recorridoVirtual, videoUrl: videoUrl)
                 
             }
             self.exposicionesTV.reloadData()
@@ -83,15 +89,22 @@ class ExposicionesViewController: UIViewController, UITableViewDelegate, UITable
         //setup cell
         let exposicion = exposiciones[indexPath.row]
         cell.tituloLbl.text = exposicion.title
-        cell.subtituloLbl.text = exposicion.subtitle
-        cell.fechaLbl.text = exposicion.firstDate + " - " + exposicion.lastDate
+        cell.fechaLbl.text = exposicion.startDate
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+<<<<<<< Updated upstream
 //          let exposicion = exposiciones[indexPath.row]
         
+=======
+        if let vc = storyboard?.instantiateViewController(identifier: "Exposiciones2ViewController") as?
+            Exposiciones2ViewController{
+            vc.data = exposiciones[indexPath.row]
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+>>>>>>> Stashed changes
     }
 
 }

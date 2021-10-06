@@ -12,7 +12,6 @@ class ExposicionTableViewCell: UITableViewCell {
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var tituloLbl: UILabel!
     @IBOutlet weak var fechaLbl: UITextView!
-    @IBOutlet weak var subtituloLbl: UILabel!
     @IBOutlet weak var overlayView: UIView!
     
     override func awakeFromNib() {
