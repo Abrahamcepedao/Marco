@@ -1135,7 +1135,7 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vdd-RS-rFn"/>
-                        <color key="backgroundColor" red="0.95686274509803915" green="0.92941176470588238" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.95680779220000001" green="0.92907702920000002" blue="0.904763341" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Etx-Fa-jzp" firstAttribute="leading" secondItem="Vdd-RS-rFn" secondAttribute="leading" id="0iO-aJ-HR5"/>
                             <constraint firstItem="Urw-Rn-Iwa" firstAttribute="top" secondItem="Etx-Fa-jzp" secondAttribute="bottom" constant="45" id="3Q3-y2-Mxs"/>
