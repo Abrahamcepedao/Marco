@@ -221,6 +221,9 @@
 		D708E91726D31C9300CFD79D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0B585FB9270D71470050EE3B /* CentroAyudaViewController.swift */,
+				0B585FC0270D7C140050EE3B /* FaqsViewController.swift */,
+				0B46D072270DCFF500A15D7E /* PerfilDatosViewController.swift */,
 				D708E91A26D31CAE00CFD79D /* PerfilViewController.swift */,
 				D79F89DD26E8125000659267 /* SignUpViewController.swift */,
 				D79F89E226E8133800659267 /* LoginViewController.swift */,
@@ -238,11 +241,8 @@
 			children = (
 				D7F6720926D5736E0091B47A /* Cells */,
 				D708E8EA26D31C5D00CFD79D /* Main.storyboard */,
-				0B585FB9270D71470050EE3B /* CentroAyudaViewController.swift */,
 				0B585FBA270D71470050EE3B /* CentroAyudaViewController.xib */,
-				0B585FC0270D7C140050EE3B /* FaqsViewController.swift */,
 				0B585FC1270D7C140050EE3B /* FaqsViewController.xib */,
-				0B46D072270DCFF500A15D7E /* PerfilDatosViewController.swift */,
 				0B46D073270DCFF500A15D7E /* PerfilDatosViewController.xib */,
 			);
 			path = Views;

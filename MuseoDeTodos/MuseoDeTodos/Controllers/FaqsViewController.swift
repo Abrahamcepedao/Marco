@@ -1,13 +1,13 @@
 //
-//  CentroAyudaViewController.swift
+//  FaqsViewController.swift
 //  MuseoDeTodos
 //
-//  Created by user196030 on 10/5/21.
+//  Created by Ezequiel Lozano Guerrero on 10/5/21.
 //
 
 import UIKit
 
-class CentroAyudaViewController: UIViewController {
+class FaqsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
