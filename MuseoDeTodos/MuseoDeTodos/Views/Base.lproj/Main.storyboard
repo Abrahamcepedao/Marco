@@ -896,14 +896,13 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Historial Reservas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adp-BB-oEw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Historial Reservas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adp-BB-oEw">
                                 <rect key="frame" x="36" y="99" width="211" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="hfM-P5-E2R">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="hfM-P5-E2R">
                                 <rect key="frame" x="36" y="172" width="146" height="502.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="qt0-wI-Vel">
@@ -1175,7 +1174,13 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TJN-Fa-zeF"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.92941176469999998" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hfM-P5-E2R" firstAttribute="top" secondItem="adp-BB-oEw" secondAttribute="bottom" constant="43" id="9zX-5J-vNF"/>
+                            <constraint firstItem="adp-BB-oEw" firstAttribute="top" secondItem="TJN-Fa-zeF" secondAttribute="top" constant="55" id="P08-MM-L3e"/>
+                            <constraint firstItem="adp-BB-oEw" firstAttribute="leading" secondItem="TJN-Fa-zeF" secondAttribute="leading" constant="36" id="TcW-tT-Rdv"/>
+                            <constraint firstItem="adp-BB-oEw" firstAttribute="leading" secondItem="hfM-P5-E2R" secondAttribute="leading" id="UGh-Yi-Tdp"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bMe-If-cUe"/>
                 </viewController>
@@ -1191,14 +1196,13 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Métodos de pago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNq-iR-1mS">
-                                <rect key="frame" x="35" y="97" width="202" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Métodos de pago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNq-iR-1mS">
+                                <rect key="frame" x="35" y="97" width="201.5" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="kPZ-bc-zGH">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="kPZ-bc-zGH">
                                 <rect key="frame" x="35" y="175" width="300" height="200"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ODc-yf-2TI">
@@ -1280,7 +1284,13 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BaD-Qc-plC"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.92941176469999998" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CNq-iR-1mS" firstAttribute="leading" secondItem="kPZ-bc-zGH" secondAttribute="leading" id="FLd-fe-L6X"/>
+                            <constraint firstItem="CNq-iR-1mS" firstAttribute="top" secondItem="BaD-Qc-plC" secondAttribute="top" constant="53" id="LWM-Vl-D2e"/>
+                            <constraint firstItem="kPZ-bc-zGH" firstAttribute="top" secondItem="CNq-iR-1mS" secondAttribute="bottom" constant="48" id="f91-3o-6z4"/>
+                            <constraint firstItem="CNq-iR-1mS" firstAttribute="leading" secondItem="BaD-Qc-plC" secondAttribute="leading" constant="35" id="t5V-Pa-aIU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="P22-q4-DMc"/>
                 </viewController>
