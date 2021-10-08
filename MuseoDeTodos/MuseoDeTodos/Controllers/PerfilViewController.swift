@@ -13,6 +13,8 @@ class PerfilViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     @IBOutlet weak var usernameLbl: UILabel!
     @IBOutlet weak var optionsTV: UITableView!
+    @IBOutlet weak var datosPerfilBtn: UIButton!
+    @IBOutlet weak var centroAyudaBtn: UIButton!
     
     let options: [Option] = [
         Option(title: "Terminos y condiciones", image: "info.circle"),
@@ -46,5 +48,40 @@ class PerfilViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.optionImg.image = UIImage(systemName: option.image)
         return  cell
     }
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.row == 2{
+            
+            let vc = CentroAyudaViewController(nibName: "CentroAyudaViewController", bundle: nil)
+            
+            vc.modalPresentationStyle = .pageSheet
+            self.present(vc, animated: true, completion: nil)
+            
+        }
+        
+    }
+    
+    
+    @IBAction func openDatosPerfil(_ sender: Any){
+        
+        let vc = PerfilDatosViewController(nibName: "PerfilDatosViewController", bundle: nil)
+        vc.nombre = "Ezequiel"
+        vc.email = "lozano@hotmail.com"
+        vc.pass = "******"
+        vc.apellidos = "Lozano Guerrero"
+        vc.segundoNombre = "_"
+        vc.modalPresentationStyle = .pageSheet
+        self.present(vc, animated: true, completion: nil)
+        
+    }
+    
+    @IBAction func openCentroAyuda(_ sender: Any){
+        
+        let vc = CentroAyudaViewController(nibName: "CentroAyudaViewController", bundle: nil)
+        vc.modalPresentationStyle = .pageSheet
+        self.present(vc, animated: true, completion: nil)
+        
+    }
+    
 }

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B46D074270DCFF500A15D7E /* PerfilDatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B46D072270DCFF500A15D7E /* PerfilDatosViewController.swift */; };
+		0B46D075270DCFF500A15D7E /* PerfilDatosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B46D073270DCFF500A15D7E /* PerfilDatosViewController.xib */; };
+		0B585FBB270D71470050EE3B /* CentroAyudaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B585FB9270D71470050EE3B /* CentroAyudaViewController.swift */; };
+		0B585FBC270D71470050EE3B /* CentroAyudaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B585FBA270D71470050EE3B /* CentroAyudaViewController.xib */; };
+		0B585FC2270D7C140050EE3B /* FaqsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B585FC0270D7C140050EE3B /* FaqsViewController.swift */; };
+		0B585FC3270D7C140050EE3B /* FaqsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B585FC1270D7C140050EE3B /* FaqsViewController.xib */; };
 		1B50CEE8DE8AD71FF4D53FEA /* Pods_MuseoDeTodosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF127D76B21D836D4DF0BF69 /* Pods_MuseoDeTodosTests.framework */; };
 		314D8A7C0C950746D78588FB /* Pods_MuseoDeTodos_MuseoDeTodosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A441B721F1597A349A2A57EF /* Pods_MuseoDeTodos_MuseoDeTodosUITests.framework */; };
 		3200A6D326EA4C2600255F07 /* ExposicionTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3200A6D226EA4C2600255F07 /* ExposicionTableViewModel.swift */; };
@@ -56,6 +62,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B46D072270DCFF500A15D7E /* PerfilDatosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilDatosViewController.swift; sourceTree = "<group>"; };
+		0B46D073270DCFF500A15D7E /* PerfilDatosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerfilDatosViewController.xib; sourceTree = "<group>"; };
+		0B585FB9270D71470050EE3B /* CentroAyudaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentroAyudaViewController.swift; sourceTree = "<group>"; };
+		0B585FBA270D71470050EE3B /* CentroAyudaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CentroAyudaViewController.xib; sourceTree = "<group>"; };
+		0B585FC0270D7C140050EE3B /* FaqsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqsViewController.swift; sourceTree = "<group>"; };
+		0B585FC1270D7C140050EE3B /* FaqsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FaqsViewController.xib; sourceTree = "<group>"; };
 		18E3437232CC940907D0B44B /* Pods-MuseoDeTodosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuseoDeTodosTests.debug.xcconfig"; path = "Target Support Files/Pods-MuseoDeTodosTests/Pods-MuseoDeTodosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2E587654C38EC4932605DFEC /* Pods-MuseoDeTodosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuseoDeTodosTests.release.xcconfig"; path = "Target Support Files/Pods-MuseoDeTodosTests/Pods-MuseoDeTodosTests.release.xcconfig"; sourceTree = "<group>"; };
 		3200A6D226EA4C2600255F07 /* ExposicionTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposicionTableViewModel.swift; sourceTree = "<group>"; };
@@ -209,6 +221,9 @@
 		D708E91726D31C9300CFD79D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0B585FB9270D71470050EE3B /* CentroAyudaViewController.swift */,
+				0B585FC0270D7C140050EE3B /* FaqsViewController.swift */,
+				0B46D072270DCFF500A15D7E /* PerfilDatosViewController.swift */,
 				D708E91A26D31CAE00CFD79D /* PerfilViewController.swift */,
 				D79F89DD26E8125000659267 /* SignUpViewController.swift */,
 				D79F89E226E8133800659267 /* LoginViewController.swift */,
@@ -226,6 +241,9 @@
 			children = (
 				D7F6720926D5736E0091B47A /* Cells */,
 				D708E8EA26D31C5D00CFD79D /* Main.storyboard */,
+				0B585FBA270D71470050EE3B /* CentroAyudaViewController.xib */,
+				0B585FC1270D7C140050EE3B /* FaqsViewController.xib */,
+				0B46D073270DCFF500A15D7E /* PerfilDatosViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -362,6 +380,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B46D075270DCFF500A15D7E /* PerfilDatosViewController.xib in Resources */,
+				0B585FBC270D71470050EE3B /* CentroAyudaViewController.xib in Resources */,
 				D7F6720D26D573800091B47A /* OptionsTableViewCell.xib in Resources */,
 				D7A75B3D26EAEFDD00F7443C /* RerservasTableViewCell.xib in Resources */,
 				D708E8F126D31C6500CFD79D /* LaunchScreen.storyboard in Resources */,
@@ -369,6 +389,7 @@
 				D708E8EE26D31C6500CFD79D /* Assets.xcassets in Resources */,
 				D79F89FB26E8E48900659267 /* ExposicionTableViewCell.xib in Resources */,
 				D708E8EC26D31C5D00CFD79D /* Main.storyboard in Resources */,
+				0B585FC3270D7C140050EE3B /* FaqsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +517,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B585FBB270D71470050EE3B /* CentroAyudaViewController.swift in Sources */,
 				D7A75B4726EAF33400F7443C /* Reserva.swift in Sources */,
 				D79F8A0526E8EAA400659267 /* Exposicion.swift in Sources */,
 				324D343F26F551E00051F15D /* Exposiciones2ViewController.swift in Sources */,
@@ -504,9 +526,11 @@
 				D72F606427040B0C00DC2FF6 /* ReservaViewController.swift in Sources */,
 				D7F6720C26D573800091B47A /* OptionsTableViewCell.swift in Sources */,
 				D708E8E526D31C5D00CFD79D /* AppDelegate.swift in Sources */,
+				0B46D074270DCFF500A15D7E /* PerfilDatosViewController.swift in Sources */,
 				D79F89FA26E8E48900659267 /* ExposicionTableViewCell.swift in Sources */,
 				D79A515526E92CFB0085BA67 /* DatosPerfilViewController.swift in Sources */,
 				D79F8A0026E8E9F800659267 /* ExposicionesViewController.swift in Sources */,
+				0B585FC2270D7C140050EE3B /* FaqsViewController.swift in Sources */,
 				D7F6721826D577960091B47A /* Option.swift in Sources */,
 				D7A75B3C26EAEFDD00F7443C /* RerservasTableViewCell.swift in Sources */,
 				D708E91B26D31CAE00CFD79D /* PerfilViewController.swift in Sources */,
