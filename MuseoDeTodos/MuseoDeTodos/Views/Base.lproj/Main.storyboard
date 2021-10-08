@@ -377,7 +377,7 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
         <!--Sign Up View Controller-->
         <scene sceneID="jaM-FM-AHR">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Egv-hr-QQV" customClass="SignUpViewController" customModule="MuseoDeTodos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SingUpViewController" modalPresentationStyle="fullScreen" id="Egv-hr-QQV" customClass="SignUpViewController" customModule="MuseoDeTodos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dSL-1v-viW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class PerfilViewController: UIViewController {
     
@@ -83,12 +84,23 @@ extension PerfilViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if indexPath.row == 2{
+        if indexPath.row == 2 { // contactanos
             
             let vc = CentroAyudaViewController(nibName: "CentroAyudaViewController", bundle: nil)
             
             vc.modalPresentationStyle = .pageSheet
             self.present(vc, animated: true, completion: nil)
+            
+        }
+        if indexPath.row == 3 { //cerrar sesión
+            //logout user
+            try! Auth.auth().signOut()
+
+            //go to login
+            if let storyboard = self.storyboard {
+                let vc = storyboard.instantiateViewController(withIdentifier: "SingUpViewController") as! SignUpViewController
+                self.present(vc, animated: false, completion: nil)
+            }
             
         }
         
