@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PerfilViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class PerfilViewController: UIViewController {
     
     
 
@@ -35,7 +35,39 @@ class PerfilViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func openDatosPerfil(_ sender: Any){
+        
+        let vc = PerfilDatosViewController(nibName: "PerfilDatosViewController", bundle: nil)
+        vc.nombre = "Ezequiel"
+        vc.email = "lozano@hotmail.com"
+        vc.pass = "******"
+        vc.apellidos = "Lozano Guerrero"
+        vc.segundoNombre = "_"
+        vc.modalPresentationStyle = .pageSheet
+        self.present(vc, animated: true, completion: nil)
+        
+    }
+    
+    @IBAction func openCentroAyuda(_ sender: Any){
+        
+        let vc = CentroAyudaViewController(nibName: "CentroAyudaViewController", bundle: nil)
+        vc.modalPresentationStyle = .pageSheet
+        self.present(vc, animated: true, completion: nil)
+        
+    }
+    
+    @IBAction func reservasPressed(_ sender: UIButton) {
+        self.tabBarController?.selectedIndex = 2;
+    }
 
+    @IBAction func esposicionesPressed(_ sender: UIButton) {
+        self.tabBarController?.selectedIndex = 0;
+    }
+    
+}
+
+extension PerfilViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         options.count
     }
@@ -61,27 +93,4 @@ class PerfilViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
         
     }
-    
-    
-    @IBAction func openDatosPerfil(_ sender: Any){
-        
-        let vc = PerfilDatosViewController(nibName: "PerfilDatosViewController", bundle: nil)
-        vc.nombre = "Ezequiel"
-        vc.email = "lozano@hotmail.com"
-        vc.pass = "******"
-        vc.apellidos = "Lozano Guerrero"
-        vc.segundoNombre = "_"
-        vc.modalPresentationStyle = .pageSheet
-        self.present(vc, animated: true, completion: nil)
-        
-    }
-    
-    @IBAction func openCentroAyuda(_ sender: Any){
-        
-        let vc = CentroAyudaViewController(nibName: "CentroAyudaViewController", bundle: nil)
-        vc.modalPresentationStyle = .pageSheet
-        self.present(vc, animated: true, completion: nil)
-        
-    }
-    
 }

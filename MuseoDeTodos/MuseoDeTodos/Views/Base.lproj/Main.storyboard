@@ -668,7 +668,7 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
         <!--Reservas View Controller-->
         <scene sceneID="SKJ-4N-5rK">
             <objects>
-                <viewController id="3cg-ES-DK3" customClass="ReservasViewController" customModule="MuseoDeTodos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReservasViewController" id="3cg-ES-DK3" customClass="ReservasViewController" customModule="MuseoDeTodos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vjd-N7-ixv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1259,6 +1259,9 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                                     <imageReference key="image" image="arrow.right" catalog="system" symbolScale="small"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="bold"/>
                                 </state>
+                                <connections>
+                                    <action selector="reservasPressed:" destination="uEa-gd-e8P" eventType="touchUpInside" id="xhz-58-YMj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="TopLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyO-Yj-COB">
                                 <rect key="frame" x="281" y="395" width="118" height="30"/>
@@ -1274,6 +1277,9 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                                     <imageReference key="image" image="arrow.right" catalog="system" symbolScale="small"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="bold"/>
                                 </state>
+                                <connections>
+                                    <action selector="esposicionesPressed:" destination="uEa-gd-e8P" eventType="touchUpInside" id="ATy-H7-MkM"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lnq-qs-MAm">
                                 <rect key="frame" x="0.0" y="475" width="414" height="338"/>
@@ -1889,6 +1895,7 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                         <imageReference key="selectedImage" image="house.fill" catalog="system" symbolScale="large"/>
                     </tabBarItem>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="NmV-X4-D4p"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SMf-Gx-hEQ">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1914,6 +1921,7 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                         <imageReference key="selectedImage" image="ticket.fill" catalog="system" symbolScale="large"/>
                     </tabBarItem>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="lRd-xh-wlq"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xGL-ts-kiQ">
                         <autoresizingMask key="autoresizingMask"/>
@@ -1942,8 +1950,8 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="logo" width="2444" height="2444"/>
         <image name="mastercard-logo" width="3500" height="2723"/>
-        <image name="person" catalog="system" width="128" height="117"/>
         <image name="person" width="3325" height="3412"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="telefono" width="512" height="512"/>
         <image name="ticket" catalog="system" width="128" height="84"/>
