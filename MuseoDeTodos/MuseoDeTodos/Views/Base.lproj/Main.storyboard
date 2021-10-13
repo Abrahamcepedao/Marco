@@ -1305,6 +1305,27 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                                     <constraint firstItem="08f-UV-WiV" firstAttribute="leading" secondItem="lnq-qs-MAm" secondAttribute="leading" constant="15" id="tzZ-hj-6V7"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="TopLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4UO-fy-2gQ">
+                                <rect key="frame" x="148" y="395" width="118" height="30"/>
+                                <color key="backgroundColor" red="0.92351055150000005" green="0.027997247869999999" blue="0.60786813500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="CK1-uP-Hte"/>
+                                    <constraint firstAttribute="height" constant="30" id="CNX-rI-aMG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="118" id="oyg-8t-m27"/>
+                                    <constraint firstAttribute="width" constant="118" id="s5K-xw-UsV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Eventos">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <imageReference key="image" image="arrow.right" catalog="system" symbolScale="small"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="bold"/>
+                                </state>
+                                <connections>
+                                    <action selector="esposicionesPressed:" destination="uEa-gd-e8P" eventType="touchUpInside" id="P7I-cc-gsC"/>
+                                    <action selector="openEventos:" destination="uEa-gd-e8P" eventType="touchUpInside" id="b47-EJ-THy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vdd-RS-rFn"/>
                         <color key="backgroundColor" red="0.95680779220000001" green="0.92907702920000002" blue="0.904763341" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1318,12 +1339,15 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                             <constraint firstItem="lnq-qs-MAm" firstAttribute="bottom" secondItem="Vdd-RS-rFn" secondAttribute="bottom" id="HMG-Xw-CaA"/>
                             <constraint firstItem="lnq-qs-MAm" firstAttribute="leading" secondItem="Vdd-RS-rFn" secondAttribute="leading" id="HsE-2A-GD7"/>
                             <constraint firstItem="QfE-fH-Saa" firstAttribute="leading" secondItem="Vdd-RS-rFn" secondAttribute="leading" constant="15" id="KIZ-5R-K8a"/>
+                            <constraint firstItem="4UO-fy-2gQ" firstAttribute="leading" secondItem="QfE-fH-Saa" secondAttribute="trailing" constant="15" id="NWu-bz-onD"/>
                             <constraint firstItem="Urw-Rn-Iwa" firstAttribute="leading" secondItem="Vdd-RS-rFn" secondAttribute="leading" constant="15" id="Nqb-9D-2XV"/>
                             <constraint firstItem="ywr-4B-YEC" firstAttribute="centerX" secondItem="lht-fm-FZR" secondAttribute="centerX" id="NsZ-dm-N1O"/>
                             <constraint firstItem="TRc-ul-fTq" firstAttribute="top" secondItem="ywr-4B-YEC" secondAttribute="bottom" constant="8" symbolic="YES" id="Tcx-F3-d0B"/>
                             <constraint firstItem="Etx-Fa-jzp" firstAttribute="top" secondItem="lht-fm-FZR" secondAttribute="top" id="Xxx-N9-Ry8"/>
                             <constraint firstItem="xyO-Yj-COB" firstAttribute="top" secondItem="Urw-Rn-Iwa" secondAttribute="bottom" constant="50" id="dgp-eW-S7J"/>
+                            <constraint firstItem="xyO-Yj-COB" firstAttribute="leading" secondItem="4UO-fy-2gQ" secondAttribute="trailing" constant="15" id="hid-AI-inj"/>
                             <constraint firstItem="QfE-fH-Saa" firstAttribute="top" secondItem="Urw-Rn-Iwa" secondAttribute="bottom" constant="50" id="jyQ-d6-ZUm"/>
+                            <constraint firstItem="4UO-fy-2gQ" firstAttribute="top" secondItem="Urw-Rn-Iwa" secondAttribute="bottom" constant="50" id="jyl-hR-Lj3"/>
                             <constraint firstItem="lnq-qs-MAm" firstAttribute="top" secondItem="QfE-fH-Saa" secondAttribute="bottom" constant="50" id="lBt-H6-cTB"/>
                             <constraint firstItem="ywr-4B-YEC" firstAttribute="top" secondItem="Vdd-RS-rFn" secondAttribute="top" constant="30" id="ouK-Nz-aOe"/>
                             <constraint firstItem="lnq-qs-MAm" firstAttribute="trailing" secondItem="Vdd-RS-rFn" secondAttribute="trailing" id="zA9-F4-qDF"/>

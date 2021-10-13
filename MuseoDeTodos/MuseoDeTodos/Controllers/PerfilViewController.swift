@@ -58,6 +58,13 @@ class PerfilViewController: UIViewController {
         
     }
     
+    @IBAction func openEventos(_ sender: UIButton) {
+        let vc = HoyViewController(nibName: "HoyViewController", bundle: nil)
+        vc.modalPresentationStyle = .pageSheet
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    
     @IBAction func reservasPressed(_ sender: UIButton) {
         self.tabBarController?.selectedIndex = 2;
     }
