@@ -26,6 +26,15 @@
 		D708E90726D31C6600CFD79D /* MuseoDeTodosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D708E90626D31C6600CFD79D /* MuseoDeTodosUITests.swift */; };
 		D708E91B26D31CAE00CFD79D /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D708E91A26D31CAE00CFD79D /* PerfilViewController.swift */; };
 		D72F606427040B0C00DC2FF6 /* ReservaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72F606327040B0C00DC2FF6 /* ReservaViewController.swift */; };
+		D76E34872717336000A1D11C /* HoyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E34852717336000A1D11C /* HoyViewController.swift */; };
+		D76E34882717336000A1D11C /* HoyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D76E34862717336000A1D11C /* HoyViewController.xib */; };
+		D76E349227173D7400A1D11C /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E349027173D7400A1D11C /* CalendarCollectionViewCell.swift */; };
+		D76E349327173D7400A1D11C /* CalendarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D76E349127173D7400A1D11C /* CalendarCollectionViewCell.xib */; };
+		D76E34982717406700A1D11C /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E34972717406700A1D11C /* Evento.swift */; };
+		D76E349E271749F800A1D11C /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E349D271749F800A1D11C /* CalendarHelper.swift */; };
+		D76E34A7271797E500A1D11C /* EventoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E34A5271797E500A1D11C /* EventoTableViewCell.swift */; };
+		D76E34A8271797E500A1D11C /* EventoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D76E34A6271797E500A1D11C /* EventoTableViewCell.xib */; };
+		D76E34AD2717A4DB00A1D11C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E34AC2717A4DB00A1D11C /* NetworkManager.swift */; };
 		D79A515526E92CFB0085BA67 /* DatosPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79A515426E92CFB0085BA67 /* DatosPerfilViewController.swift */; };
 		D79F89DE26E8125000659267 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79F89DD26E8125000659267 /* SignUpViewController.swift */; };
 		D79F89E326E8133800659267 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79F89E226E8133800659267 /* LoginViewController.swift */; };
@@ -90,6 +99,15 @@
 		D708E90826D31C6600CFD79D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D708E91A26D31CAE00CFD79D /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		D72F606327040B0C00DC2FF6 /* ReservaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservaViewController.swift; sourceTree = "<group>"; };
+		D76E34852717336000A1D11C /* HoyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoyViewController.swift; sourceTree = "<group>"; };
+		D76E34862717336000A1D11C /* HoyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HoyViewController.xib; sourceTree = "<group>"; };
+		D76E349027173D7400A1D11C /* CalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCell.swift; sourceTree = "<group>"; };
+		D76E349127173D7400A1D11C /* CalendarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCollectionViewCell.xib; sourceTree = "<group>"; };
+		D76E34972717406700A1D11C /* Evento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
+		D76E349D271749F800A1D11C /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
+		D76E34A5271797E500A1D11C /* EventoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventoTableViewCell.swift; sourceTree = "<group>"; };
+		D76E34A6271797E500A1D11C /* EventoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventoTableViewCell.xib; sourceTree = "<group>"; };
+		D76E34AC2717A4DB00A1D11C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D79A515426E92CFB0085BA67 /* DatosPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosPerfilViewController.swift; sourceTree = "<group>"; };
 		D79F89DD26E8125000659267 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D79F89E226E8133800659267 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +203,7 @@
 		D708E8E326D31C5C00CFD79D /* MuseoDeTodos */ = {
 			isa = PBXGroup;
 			children = (
+				D76E349C271749EB00A1D11C /* Services */,
 				D708E91926D31CA000CFD79D /* Models */,
 				D708E91826D31C9A00CFD79D /* Views */,
 				D708E91726D31C9300CFD79D /* Controllers */,
@@ -230,6 +249,7 @@
 				D7A75B4126EAF29900F7443C /* ReservasViewController.swift */,
 				324D343E26F551E00051F15D /* Exposiciones2ViewController.swift */,
 				D72F606327040B0C00DC2FF6 /* ReservaViewController.swift */,
+				D76E34852717336000A1D11C /* HoyViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -242,6 +262,7 @@
 				0B585FBA270D71470050EE3B /* CentroAyudaViewController.xib */,
 				0B585FC1270D7C140050EE3B /* FaqsViewController.xib */,
 				0B46D073270DCFF500A15D7E /* PerfilDatosViewController.xib */,
+				D76E34862717336000A1D11C /* HoyViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -252,8 +273,18 @@
 				D7F6721726D577960091B47A /* Option.swift */,
 				D79F8A0426E8EAA400659267 /* Exposicion.swift */,
 				D7A75B4626EAF33400F7443C /* Reserva.swift */,
+				D76E34972717406700A1D11C /* Evento.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D76E349C271749EB00A1D11C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D76E349D271749F800A1D11C /* CalendarHelper.swift */,
+				D76E34AC2717A4DB00A1D11C /* NetworkManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		D7F6720926D5736E0091B47A /* Cells */ = {
@@ -265,6 +296,10 @@
 				D79F89F926E8E48900659267 /* ExposicionTableViewCell.xib */,
 				D7A75B3A26EAEFDD00F7443C /* RerservasTableViewCell.swift */,
 				D7A75B3B26EAEFDD00F7443C /* RerservasTableViewCell.xib */,
+				D76E349027173D7400A1D11C /* CalendarCollectionViewCell.swift */,
+				D76E349127173D7400A1D11C /* CalendarCollectionViewCell.xib */,
+				D76E34A5271797E500A1D11C /* EventoTableViewCell.swift */,
+				D76E34A6271797E500A1D11C /* EventoTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -377,10 +412,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D76E349327173D7400A1D11C /* CalendarCollectionViewCell.xib in Resources */,
 				0B46D075270DCFF500A15D7E /* PerfilDatosViewController.xib in Resources */,
 				0B585FBC270D71470050EE3B /* CentroAyudaViewController.xib in Resources */,
 				D7F6720D26D573800091B47A /* OptionsTableViewCell.xib in Resources */,
 				D7A75B3D26EAEFDD00F7443C /* RerservasTableViewCell.xib in Resources */,
+				D76E34A8271797E500A1D11C /* EventoTableViewCell.xib in Resources */,
+				D76E34882717336000A1D11C /* HoyViewController.xib in Resources */,
 				D708E8F126D31C6500CFD79D /* LaunchScreen.storyboard in Resources */,
 				D79F89F426E822A700659267 /* GoogleService-Info.plist in Resources */,
 				D708E8EE26D31C6500CFD79D /* Assets.xcassets in Resources */,
@@ -516,21 +554,27 @@
 			files = (
 				0B585FBB270D71470050EE3B /* CentroAyudaViewController.swift in Sources */,
 				D7A75B4726EAF33400F7443C /* Reserva.swift in Sources */,
+				D76E34982717406700A1D11C /* Evento.swift in Sources */,
 				D79F8A0526E8EAA400659267 /* Exposicion.swift in Sources */,
 				324D343F26F551E00051F15D /* Exposiciones2ViewController.swift in Sources */,
 				D79F89E326E8133800659267 /* LoginViewController.swift in Sources */,
 				D79F89DE26E8125000659267 /* SignUpViewController.swift in Sources */,
+				D76E349E271749F800A1D11C /* CalendarHelper.swift in Sources */,
+				D76E34A7271797E500A1D11C /* EventoTableViewCell.swift in Sources */,
 				D72F606427040B0C00DC2FF6 /* ReservaViewController.swift in Sources */,
 				D7F6720C26D573800091B47A /* OptionsTableViewCell.swift in Sources */,
 				D708E8E526D31C5D00CFD79D /* AppDelegate.swift in Sources */,
+				D76E34872717336000A1D11C /* HoyViewController.swift in Sources */,
 				0B46D074270DCFF500A15D7E /* PerfilDatosViewController.swift in Sources */,
 				D79F89FA26E8E48900659267 /* ExposicionTableViewCell.swift in Sources */,
 				D79A515526E92CFB0085BA67 /* DatosPerfilViewController.swift in Sources */,
 				D79F8A0026E8E9F800659267 /* ExposicionesViewController.swift in Sources */,
 				0B585FC2270D7C140050EE3B /* FaqsViewController.swift in Sources */,
+				D76E349227173D7400A1D11C /* CalendarCollectionViewCell.swift in Sources */,
 				D7F6721826D577960091B47A /* Option.swift in Sources */,
 				D7A75B3C26EAEFDD00F7443C /* RerservasTableViewCell.swift in Sources */,
 				D708E91B26D31CAE00CFD79D /* PerfilViewController.swift in Sources */,
+				D76E34AD2717A4DB00A1D11C /* NetworkManager.swift in Sources */,
 				D708E8E726D31C5D00CFD79D /* SceneDelegate.swift in Sources */,
 				D7A75B4226EAF29900F7443C /* ReservasViewController.swift in Sources */,
 			);
