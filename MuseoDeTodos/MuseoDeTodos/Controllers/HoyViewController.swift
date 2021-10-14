@@ -18,13 +18,15 @@ class HoyViewController: UIViewController {
     
     var days = [Date]()
     
-    var events: [Evento] =  [
-        Evento(id: "9c732fe3-a4d1-4257-b9a5-c1fcfc826604", events: ["XXIX Ciclo de Cine: Otoño 2021"], date: "2021-10-13T00:00:00.000Z"),
-        Evento(id: "1c1a0161-dd4a-4ad5-8c53-06739087757a", events: ["Taller de Estrategias de sustentabilidad para el arte y la cultura", "AWART. Conciencia a través del arte"], date: "2021-10-18T00:00:00.000Z"),
-        Evento(id: "febd3985-392b-4176-975c-3cf827668604", events: ["Café literario: “La buena suerte."], date: "2021-10-19T00:00:00.000Z"),
-        Evento(id: "8ce981bb-06c1-4327-9622-9d1be6befa5", events: ["XXIX Ciclo de Cine: Otoño 2021"], date: "2021-10-20T00:00:00.000Z"),
-        Evento(id: "d28b5f05-e098-40e2-8c4e-9700076b2dc4", events: ["XXIX Ciclo de Cine: Otoño 2021"], date: "2021-10-27T00:00:00.000Z"),
-    ]
+    var  events: [EventoElement] = []
+    
+//    var events: [Evento] =  [
+//        Evento(id: "9c732fe3-a4d1-4257-b9a5-c1fcfc826604", events: ["XXIX Ciclo de Cine: Otoño 2021"], date: "2021-10-13T00:00:00.000Z"),
+//        Evento(id: "1c1a0161-dd4a-4ad5-8c53-06739087757a", events: ["Taller de Estrategias de sustentabilidad para el arte y la cultura", "AWART. Conciencia a través del arte"], date: "2021-10-18T00:00:00.000Z"),
+//        Evento(id: "febd3985-392b-4176-975c-3cf827668604", events: ["Café literario: “La buena suerte."], date: "2021-10-19T00:00:00.000Z"),
+//        Evento(id: "8ce981bb-06c1-4327-9622-9d1be6befa5", events: ["XXIX Ciclo de Cine: Otoño 2021"], date: "2021-10-20T00:00:00.000Z"),
+//        Evento(id: "d28b5f05-e098-40e2-8c4e-9700076b2dc4", events: ["XXIX Ciclo de Cine: Otoño 2021"], date: "2021-10-27T00:00:00.000Z"),
+//    ]
     
     var currentEvents: [String] = ["No se han encontrado eventos"]
     
@@ -32,15 +34,40 @@ class HoyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        
         // Setup collection view
-        setupDates()
+        //setupDates()
         setupCollectionView()
         setCellsView()
         setWeekView()
         
         //setup Events table view
         setupTableView()
+        
+        //fetchData
+        fetchData()
+    }
+    
+    
+    //<----fetch data----->
+    func fetchData(){
+        NetworkManager.getExternalData(fileLocation: "https://pacific-inlet-83178.herokuapp.com/events", method:  .get, parameters: nil, stringParameters: nil) { (event: Eventos?, error) in
+            if error != nil {
+                print(error!)
+            } else{
+                if let eventsRequest = event {
+                    for eventItem in eventsRequest {
+                        let item = EventoElement(id: eventItem.id, events: eventItem.events, date: eventItem.date)
+                        self.events.append(item)
+                        self.calendarCV.reloadData()
+                        self.eventTV.reloadData()
+                    }
+                    self.setupDates()
+                }
+            }
+        }
     }
     
     //<----collection view functions----->
@@ -123,7 +150,6 @@ extension  HoyViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let month = CalendarHelper().month(date: date)
         let day = CalendarHelper().dayOfMonth(date: date)
         let stringDate = year + "-" + month + "-" + String(day)
-//        print(stringDate)
         
         //selected
         if(date == selectedDate){
@@ -134,18 +160,13 @@ extension  HoyViewController: UICollectionViewDelegate, UICollectionViewDataSour
             cell.dayLbl.textColor = UIColor.black
         }
         
-        //currentEvents.removeAll()
-        
         //has events
         if(dates.contains(stringDate)){
-            print("has evente \(stringDate)")
             let index = dates.firstIndex(of: stringDate)!
-//            events[index].events.count
             cell.numEventsLbl.text = String(events[index].events.count)
             cell.numEventsView.isHidden = false
             
             //has events and is selected
-            
             if(date == selectedDate){
                 currentEvents.removeAll()
                 for event in events[index].events {

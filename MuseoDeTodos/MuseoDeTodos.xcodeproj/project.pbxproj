@@ -34,6 +34,7 @@
 		D76E349E271749F800A1D11C /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E349D271749F800A1D11C /* CalendarHelper.swift */; };
 		D76E34A7271797E500A1D11C /* EventoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E34A5271797E500A1D11C /* EventoTableViewCell.swift */; };
 		D76E34A8271797E500A1D11C /* EventoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D76E34A6271797E500A1D11C /* EventoTableViewCell.xib */; };
+		D76E34AD2717A4DB00A1D11C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E34AC2717A4DB00A1D11C /* NetworkManager.swift */; };
 		D79A515526E92CFB0085BA67 /* DatosPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79A515426E92CFB0085BA67 /* DatosPerfilViewController.swift */; };
 		D79F89DE26E8125000659267 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79F89DD26E8125000659267 /* SignUpViewController.swift */; };
 		D79F89E326E8133800659267 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79F89E226E8133800659267 /* LoginViewController.swift */; };
@@ -106,6 +107,7 @@
 		D76E349D271749F800A1D11C /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
 		D76E34A5271797E500A1D11C /* EventoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventoTableViewCell.swift; sourceTree = "<group>"; };
 		D76E34A6271797E500A1D11C /* EventoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventoTableViewCell.xib; sourceTree = "<group>"; };
+		D76E34AC2717A4DB00A1D11C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D79A515426E92CFB0085BA67 /* DatosPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosPerfilViewController.swift; sourceTree = "<group>"; };
 		D79F89DD26E8125000659267 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D79F89E226E8133800659267 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				D76E349D271749F800A1D11C /* CalendarHelper.swift */,
+				D76E34AC2717A4DB00A1D11C /* NetworkManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -571,6 +574,7 @@
 				D7F6721826D577960091B47A /* Option.swift in Sources */,
 				D7A75B3C26EAEFDD00F7443C /* RerservasTableViewCell.swift in Sources */,
 				D708E91B26D31CAE00CFD79D /* PerfilViewController.swift in Sources */,
+				D76E34AD2717A4DB00A1D11C /* NetworkManager.swift in Sources */,
 				D708E8E726D31C5D00CFD79D /* SceneDelegate.swift in Sources */,
 				D7A75B4226EAF29900F7443C /* ReservasViewController.swift in Sources */,
 			);
