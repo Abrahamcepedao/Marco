@@ -35,6 +35,9 @@
 		D76E34A7271797E500A1D11C /* EventoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E34A5271797E500A1D11C /* EventoTableViewCell.swift */; };
 		D76E34A8271797E500A1D11C /* EventoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D76E34A6271797E500A1D11C /* EventoTableViewCell.xib */; };
 		D76E34AD2717A4DB00A1D11C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E34AC2717A4DB00A1D11C /* NetworkManager.swift */; };
+		D7927B15271890570049D1FD /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7927B14271890570049D1FD /* Question.swift */; };
+		D7927B1B271890870049D1FD /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7927B19271890870049D1FD /* QuestionTableViewCell.swift */; };
+		D7927B1C271890870049D1FD /* QuestionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7927B1A271890870049D1FD /* QuestionTableViewCell.xib */; };
 		D79A515526E92CFB0085BA67 /* DatosPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79A515426E92CFB0085BA67 /* DatosPerfilViewController.swift */; };
 		D79F89DE26E8125000659267 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79F89DD26E8125000659267 /* SignUpViewController.swift */; };
 		D79F89E326E8133800659267 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79F89E226E8133800659267 /* LoginViewController.swift */; };
@@ -108,6 +111,9 @@
 		D76E34A5271797E500A1D11C /* EventoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventoTableViewCell.swift; sourceTree = "<group>"; };
 		D76E34A6271797E500A1D11C /* EventoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventoTableViewCell.xib; sourceTree = "<group>"; };
 		D76E34AC2717A4DB00A1D11C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D7927B14271890570049D1FD /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		D7927B19271890870049D1FD /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
+		D7927B1A271890870049D1FD /* QuestionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionTableViewCell.xib; sourceTree = "<group>"; };
 		D79A515426E92CFB0085BA67 /* DatosPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosPerfilViewController.swift; sourceTree = "<group>"; };
 		D79F89DD26E8125000659267 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D79F89E226E8133800659267 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -274,6 +280,7 @@
 				D79F8A0426E8EAA400659267 /* Exposicion.swift */,
 				D7A75B4626EAF33400F7443C /* Reserva.swift */,
 				D76E34972717406700A1D11C /* Evento.swift */,
+				D7927B14271890570049D1FD /* Question.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -300,6 +307,8 @@
 				D76E349127173D7400A1D11C /* CalendarCollectionViewCell.xib */,
 				D76E34A5271797E500A1D11C /* EventoTableViewCell.swift */,
 				D76E34A6271797E500A1D11C /* EventoTableViewCell.xib */,
+				D7927B19271890870049D1FD /* QuestionTableViewCell.swift */,
+				D7927B1A271890870049D1FD /* QuestionTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -417,6 +426,7 @@
 				0B585FBC270D71470050EE3B /* CentroAyudaViewController.xib in Resources */,
 				D7F6720D26D573800091B47A /* OptionsTableViewCell.xib in Resources */,
 				D7A75B3D26EAEFDD00F7443C /* RerservasTableViewCell.xib in Resources */,
+				D7927B1C271890870049D1FD /* QuestionTableViewCell.xib in Resources */,
 				D76E34A8271797E500A1D11C /* EventoTableViewCell.xib in Resources */,
 				D76E34882717336000A1D11C /* HoyViewController.xib in Resources */,
 				D708E8F126D31C6500CFD79D /* LaunchScreen.storyboard in Resources */,
@@ -573,8 +583,10 @@
 				D76E349227173D7400A1D11C /* CalendarCollectionViewCell.swift in Sources */,
 				D7F6721826D577960091B47A /* Option.swift in Sources */,
 				D7A75B3C26EAEFDD00F7443C /* RerservasTableViewCell.swift in Sources */,
+				D7927B15271890570049D1FD /* Question.swift in Sources */,
 				D708E91B26D31CAE00CFD79D /* PerfilViewController.swift in Sources */,
 				D76E34AD2717A4DB00A1D11C /* NetworkManager.swift in Sources */,
+				D7927B1B271890870049D1FD /* QuestionTableViewCell.swift in Sources */,
 				D708E8E726D31C5D00CFD79D /* SceneDelegate.swift in Sources */,
 				D7A75B4226EAF29900F7443C /* ReservasViewController.swift in Sources */,
 			);
