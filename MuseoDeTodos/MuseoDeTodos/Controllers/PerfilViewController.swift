@@ -91,6 +91,14 @@ extension PerfilViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        if indexPath.row == 1 { // contactanos
+            
+            if let storyboard = self.storyboard {
+                let vc = storyboard.instantiateViewController(withIdentifier: "AcercaMuseoViewController") as! AcercaMuseoViewController
+                self.present(vc, animated: false, completion: nil)
+            }
+        }
+        
         if indexPath.row == 2 { // contactanos
             
             let vc = CentroAyudaViewController(nibName: "CentroAyudaViewController", bundle: nil)

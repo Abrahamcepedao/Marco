@@ -1670,10 +1670,10 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
             </objects>
             <point key="canvasLocation" x="1679.7101449275362" y="1015.8482142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Acerca del Museo View Controller-->
         <scene sceneID="6Q7-oj-DTy">
             <objects>
-                <viewController id="gRY-Ho-t5H" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AcercaMuseoViewController" title="Acerca del Museo View Controller" id="gRY-Ho-t5H" customClass="AcercaMuseoViewController" customModule="MuseoDeTodos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AvZ-XQ-yQ9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1727,6 +1727,9 @@ El museo debe ser visto como un espacio abierto e incluyente hacia todas las for
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="museo" translatesAutoresizingMaskIntoConstraints="NO" id="6S9-ge-uTH">
+                                <rect key="frame" x="84" y="694" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PqU-HR-v5j"/>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.92941176469999998" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1742,9 +1745,13 @@ El museo debe ser visto como un espacio abierto e incluyente hacia todas las for
                             <constraint firstItem="dse-Du-YRO" firstAttribute="leading" secondItem="9Ie-c5-Z2K" secondAttribute="leading" id="SpS-ck-sGH"/>
                             <constraint firstItem="n0H-ZZ-I9Y" firstAttribute="leading" secondItem="AmL-43-dv6" secondAttribute="leading" id="Xmn-Q1-qdG"/>
                             <constraint firstItem="AmL-43-dv6" firstAttribute="top" secondItem="n0H-ZZ-I9Y" secondAttribute="bottom" constant="8" id="Z5Z-Ea-9VZ"/>
+                            <constraint firstItem="6S9-ge-uTH" firstAttribute="leading" secondItem="PqU-HR-v5j" secondAttribute="leading" constant="84" id="ZDs-CA-xii"/>
+                            <constraint firstItem="6S9-ge-uTH" firstAttribute="centerX" secondItem="9Ie-c5-Z2K" secondAttribute="centerX" id="ZQw-uU-JFA"/>
                             <constraint firstItem="Gu6-CL-Ner" firstAttribute="top" secondItem="PqU-HR-v5j" secondAttribute="top" constant="57" id="aBt-UE-9OT"/>
+                            <constraint firstItem="PqU-HR-v5j" firstAttribute="bottom" secondItem="6S9-ge-uTH" secondAttribute="bottom" constant="40" id="cGg-j0-y32"/>
                             <constraint firstItem="Gu6-CL-Ner" firstAttribute="leading" secondItem="PqU-HR-v5j" secondAttribute="leading" constant="39" id="eUj-YI-gP1"/>
                             <constraint firstItem="5dK-kd-DWy" firstAttribute="leading" secondItem="n0H-ZZ-I9Y" secondAttribute="leading" id="jxY-kQ-UrQ"/>
+                            <constraint firstItem="6S9-ge-uTH" firstAttribute="top" secondItem="9Ie-c5-Z2K" secondAttribute="bottom" constant="37.5" id="p86-qn-MUA"/>
                             <constraint firstItem="5dK-kd-DWy" firstAttribute="top" secondItem="Gu6-CL-Ner" secondAttribute="bottom" constant="18" id="yJk-SQ-tig"/>
                             <constraint firstItem="n0H-ZZ-I9Y" firstAttribute="top" secondItem="5dK-kd-DWy" secondAttribute="bottom" constant="31" id="yrW-qy-OYt"/>
                         </constraints>
@@ -2058,8 +2065,9 @@ El museo debe ser visto como un espacio abierto e incluyente hacia todas las for
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="logo" width="2444" height="2444"/>
         <image name="mastercard-logo" width="3500" height="2723"/>
-        <image name="person" width="3325" height="3412"/>
+        <image name="museo" width="2000" height="1467"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person" width="3325" height="3412"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="telefono" width="512" height="512"/>
         <image name="ticket" catalog="system" width="128" height="84"/>

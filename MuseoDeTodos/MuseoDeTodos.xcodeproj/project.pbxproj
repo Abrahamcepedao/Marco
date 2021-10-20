@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0717165927206E7600A505F4 /* AcercaMuseoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0717165827206E7600A505F4 /* AcercaMuseoViewController.swift */; };
 		0B46D074270DCFF500A15D7E /* PerfilDatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B46D072270DCFF500A15D7E /* PerfilDatosViewController.swift */; };
 		0B46D075270DCFF500A15D7E /* PerfilDatosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B46D073270DCFF500A15D7E /* PerfilDatosViewController.xib */; };
 		0B585FBB270D71470050EE3B /* CentroAyudaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B585FB9270D71470050EE3B /* CentroAyudaViewController.swift */; };
@@ -73,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0717165827206E7600A505F4 /* AcercaMuseoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcercaMuseoViewController.swift; sourceTree = "<group>"; };
 		0B46D072270DCFF500A15D7E /* PerfilDatosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilDatosViewController.swift; sourceTree = "<group>"; };
 		0B46D073270DCFF500A15D7E /* PerfilDatosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerfilDatosViewController.xib; sourceTree = "<group>"; };
 		0B585FB9270D71470050EE3B /* CentroAyudaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentroAyudaViewController.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 				324D343E26F551E00051F15D /* Exposiciones2ViewController.swift */,
 				D72F606327040B0C00DC2FF6 /* ReservaViewController.swift */,
 				D76E34852717336000A1D11C /* HoyViewController.swift */,
+				0717165827206E7600A505F4 /* AcercaMuseoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -575,6 +578,7 @@
 				D7F6720C26D573800091B47A /* OptionsTableViewCell.swift in Sources */,
 				D708E8E526D31C5D00CFD79D /* AppDelegate.swift in Sources */,
 				D76E34872717336000A1D11C /* HoyViewController.swift in Sources */,
+				0717165927206E7600A505F4 /* AcercaMuseoViewController.swift in Sources */,
 				0B46D074270DCFF500A15D7E /* PerfilDatosViewController.swift in Sources */,
 				D79F89FA26E8E48900659267 /* ExposicionTableViewCell.swift in Sources */,
 				D79A515526E92CFB0085BA67 /* DatosPerfilViewController.swift in Sources */,
