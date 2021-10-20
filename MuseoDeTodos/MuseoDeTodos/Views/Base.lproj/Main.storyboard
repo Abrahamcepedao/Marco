@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e0D-ry-F8d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e0D-ry-F8d">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -1669,6 +1669,90 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yuD-z1-flg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1679.7101449275362" y="1015.8482142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6Q7-oj-DTy">
+            <objects>
+                <viewController id="gRY-Ho-t5H" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AvZ-XQ-yQ9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Misión" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0H-ZZ-I9Y">
+                                <rect key="frame" x="39" y="347" width="68" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acerca del Museo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gu6-CL-Ner">
+                                <rect key="frame" x="39" y="101" width="207" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visión" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dse-Du-YRO">
+                                <rect key="frame" x="39" y="455" width="64" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="9Ie-c5-Z2K">
+                                <rect key="frame" x="39" y="490" width="330" height="166.5"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.92941176469999998" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="166.5" id="mO5-g6-Ub3"/>
+                                </constraints>
+                                <string key="text">MARCO pretende ser accesible, innovador, visionario, un lugar vivo que incite al diálogo y al descubrimiento donde se presente el arte contemporáneo de artistas locales, nacionales e internacionales.
+
+El museo debe ser visto como un espacio abierto e incluyente hacia todas las formas de expresión para ser un #MUSEODETODOS.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Promover el arte contemporáneo para la formación y la sensibilización de la sociedad." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="AmL-43-dv6">
+                                <rect key="frame" x="39" y="382" width="330" height="62"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.92941176469999998" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="oKQ-mZ-iZH"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="5dK-kd-DWy">
+                                <rect key="frame" x="39" y="149" width="330" height="167"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.92941176469999998" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">El Museo de Arte Contemporáneo de Monterrey (MARCO) abre sus puertas con la magna exposición Mito y Magia en América: Los Ochenta el 28 de junio de 1991, desde entonces ha presentado la obra de los más prestigiados artistas contemporáneos, se ha convertido en un foro para el talento artístico joven, y busca integrar una de las colecciones permanentes más importantes de arte contemporáneo.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PqU-HR-v5j"/>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.92941176469999998" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Gu6-CL-Ner" firstAttribute="leading" secondItem="5dK-kd-DWy" secondAttribute="leading" id="5D4-Gy-k7W"/>
+                            <constraint firstItem="AmL-43-dv6" firstAttribute="trailing" secondItem="9Ie-c5-Z2K" secondAttribute="trailing" id="Dpk-iE-DaH"/>
+                            <constraint firstItem="dse-Du-YRO" firstAttribute="top" secondItem="AmL-43-dv6" secondAttribute="bottom" constant="11" id="F7x-c0-UiW"/>
+                            <constraint firstItem="PqU-HR-v5j" firstAttribute="trailing" secondItem="5dK-kd-DWy" secondAttribute="trailing" constant="45" id="K5c-CI-rpT"/>
+                            <constraint firstItem="AmL-43-dv6" firstAttribute="leading" secondItem="dse-Du-YRO" secondAttribute="leading" id="Pm5-64-4ZP"/>
+                            <constraint firstItem="5dK-kd-DWy" firstAttribute="trailing" secondItem="AmL-43-dv6" secondAttribute="trailing" id="Py4-3x-YB5"/>
+                            <constraint firstItem="PqU-HR-v5j" firstAttribute="bottom" secondItem="9Ie-c5-Z2K" secondAttribute="bottom" constant="205.5" id="Qyr-fb-tIL"/>
+                            <constraint firstItem="9Ie-c5-Z2K" firstAttribute="top" secondItem="dse-Du-YRO" secondAttribute="bottom" constant="8" id="SFr-Ow-D3u"/>
+                            <constraint firstItem="dse-Du-YRO" firstAttribute="leading" secondItem="9Ie-c5-Z2K" secondAttribute="leading" id="SpS-ck-sGH"/>
+                            <constraint firstItem="n0H-ZZ-I9Y" firstAttribute="leading" secondItem="AmL-43-dv6" secondAttribute="leading" id="Xmn-Q1-qdG"/>
+                            <constraint firstItem="AmL-43-dv6" firstAttribute="top" secondItem="n0H-ZZ-I9Y" secondAttribute="bottom" constant="8" id="Z5Z-Ea-9VZ"/>
+                            <constraint firstItem="Gu6-CL-Ner" firstAttribute="top" secondItem="PqU-HR-v5j" secondAttribute="top" constant="57" id="aBt-UE-9OT"/>
+                            <constraint firstItem="Gu6-CL-Ner" firstAttribute="leading" secondItem="PqU-HR-v5j" secondAttribute="leading" constant="39" id="eUj-YI-gP1"/>
+                            <constraint firstItem="5dK-kd-DWy" firstAttribute="leading" secondItem="n0H-ZZ-I9Y" secondAttribute="leading" id="jxY-kQ-UrQ"/>
+                            <constraint firstItem="5dK-kd-DWy" firstAttribute="top" secondItem="Gu6-CL-Ner" secondAttribute="bottom" constant="18" id="yJk-SQ-tig"/>
+                            <constraint firstItem="n0H-ZZ-I9Y" firstAttribute="top" secondItem="5dK-kd-DWy" secondAttribute="bottom" constant="31" id="yrW-qy-OYt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3H9-ac-tl0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1679.7101449275362" y="1703.5714285714284"/>
         </scene>
         <!--Métodos Pago View Controller Scene-->
         <scene sceneID="s6E-Gg-BQy">
