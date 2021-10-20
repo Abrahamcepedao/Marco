@@ -17,6 +17,8 @@
 		1B50CEE8DE8AD71FF4D53FEA /* Pods_MuseoDeTodosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF127D76B21D836D4DF0BF69 /* Pods_MuseoDeTodosTests.framework */; };
 		314D8A7C0C950746D78588FB /* Pods_MuseoDeTodos_MuseoDeTodosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A441B721F1597A349A2A57EF /* Pods_MuseoDeTodos_MuseoDeTodosUITests.framework */; };
 		324D343F26F551E00051F15D /* Exposiciones2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D343E26F551E00051F15D /* Exposiciones2ViewController.swift */; };
+		32AD932A2720808600AA520D /* Noticia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD93292720808600AA520D /* Noticia.swift */; };
+		32AD932F2720A36600AA520D /* Noticias2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AD932E2720A36600AA520D /* Noticias2ViewController.swift */; };
 		68B028D67AD838EFBC19F743 /* Pods_MuseoDeTodos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750493A77A4A867DBD94CE72 /* Pods_MuseoDeTodos.framework */; };
 		D707981A272052E70066B066 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7079819272052E70066B066 /* User.swift */; };
 		D707982027206E2A0066B066 /* TerminosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D707981E27206E2A0066B066 /* TerminosViewController.swift */; };
@@ -96,6 +98,8 @@
 		18E3437232CC940907D0B44B /* Pods-MuseoDeTodosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuseoDeTodosTests.debug.xcconfig"; path = "Target Support Files/Pods-MuseoDeTodosTests/Pods-MuseoDeTodosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2E587654C38EC4932605DFEC /* Pods-MuseoDeTodosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuseoDeTodosTests.release.xcconfig"; path = "Target Support Files/Pods-MuseoDeTodosTests/Pods-MuseoDeTodosTests.release.xcconfig"; sourceTree = "<group>"; };
 		324D343E26F551E00051F15D /* Exposiciones2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exposiciones2ViewController.swift; sourceTree = "<group>"; };
+		32AD93292720808600AA520D /* Noticia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Noticia.swift; sourceTree = "<group>"; };
+		32AD932E2720A36600AA520D /* Noticias2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Noticias2ViewController.swift; sourceTree = "<group>"; };
 		750493A77A4A867DBD94CE72 /* Pods_MuseoDeTodos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuseoDeTodos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86669CE8A61540EC0F016FFA /* Pods-MuseoDeTodos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuseoDeTodos.debug.xcconfig"; path = "Target Support Files/Pods-MuseoDeTodos/Pods-MuseoDeTodos.debug.xcconfig"; sourceTree = "<group>"; };
 		86B6F7F630083A03186C761C /* Pods-MuseoDeTodos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuseoDeTodos.release.xcconfig"; path = "Target Support Files/Pods-MuseoDeTodos/Pods-MuseoDeTodos.release.xcconfig"; sourceTree = "<group>"; };
@@ -286,6 +290,7 @@
 				D707981E27206E2A0066B066 /* TerminosViewController.swift */,
 				D707983D272081A10066B066 /* PagosViewController.swift */,
 				D707985227208D990066B066 /* AgregarPagoViewController.swift */,
+				32AD932E2720A36600AA520D /* Noticias2ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -316,6 +321,7 @@
 				D7079819272052E70066B066 /* User.swift */,
 				D707982F272071120066B066 /* Termino.swift */,
 				D707984D2720879C0066B066 /* Card.swift */,
+				32AD93292720808600AA520D /* Noticia.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -618,6 +624,7 @@
 				D76E349E271749F800A1D11C /* CalendarHelper.swift in Sources */,
 				D76E34A7271797E500A1D11C /* EventoTableViewCell.swift in Sources */,
 				D72F606427040B0C00DC2FF6 /* ReservaViewController.swift in Sources */,
+				32AD932F2720A36600AA520D /* Noticias2ViewController.swift in Sources */,
 				D7F6720C26D573800091B47A /* OptionsTableViewCell.swift in Sources */,
 				D708E8E526D31C5D00CFD79D /* AppDelegate.swift in Sources */,
 				D76E34872717336000A1D11C /* HoyViewController.swift in Sources */,
@@ -632,6 +639,7 @@
 				D76E349227173D7400A1D11C /* CalendarCollectionViewCell.swift in Sources */,
 				D707983E272081A10066B066 /* PagosViewController.swift in Sources */,
 				D707982027206E2A0066B066 /* TerminosViewController.swift in Sources */,
+				32AD932A2720808600AA520D /* Noticia.swift in Sources */,
 				D7F6721826D577960091B47A /* Option.swift in Sources */,
 				D707981A272052E70066B066 /* User.swift in Sources */,
 				D7A75B3C26EAEFDD00F7443C /* RerservasTableViewCell.swift in Sources */,

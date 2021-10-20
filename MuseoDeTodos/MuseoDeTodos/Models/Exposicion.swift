@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Exposicion {
+struct Exposicion: Codable {
     let id: String
     let title: String
     let startDate: String
@@ -20,5 +20,7 @@ struct Exposicion {
     let obras: String
     let recorridoVirtual: String
     let videoUrl: String?
+    let photoUrl: String
 }
 
+typealias Exposiciones = [Exposicion]
