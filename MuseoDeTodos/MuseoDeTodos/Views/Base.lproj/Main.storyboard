@@ -1784,6 +1784,9 @@ El museo debe ser visto como un espacio abierto e incluyente hacia todas las for
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="tintColor" red="0.92351055150000005" green="0.027997247869999999" blue="0.60786813500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" image="plus.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="addBtnTapped:" destination="0hl-lE-RbJ" eventType="touchUpInside" id="0hj-px-JCZ"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bAf-Dm-udh">
                                 <rect key="frame" x="35" y="162" width="344" height="651"/>

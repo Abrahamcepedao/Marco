@@ -27,7 +27,13 @@ class PagosViewController: UIViewController {
         pagosTV.register(nib, forCellReuseIdentifier: "PagoCell")
     }
     
-
+    @IBAction func addBtnTapped(_ sender: UIButton) {
+        let vc = AgregarPagoViewController(nibName: "AgregarPagoViewController", bundle: nil)
+        
+        vc.modalPresentationStyle = .pageSheet
+        self.present(vc, animated: true, completion: nil)
+    }
+    
 }
 
 extension PagosViewController: UITableViewDelegate, UITableViewDataSource {

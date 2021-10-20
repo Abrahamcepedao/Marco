@@ -286,7 +286,6 @@
 				D707981E27206E2A0066B066 /* TerminosViewController.swift */,
 				D707983D272081A10066B066 /* PagosViewController.swift */,
 				D707985227208D990066B066 /* AgregarPagoViewController.swift */,
-				D707985327208D990066B066 /* AgregarPagoViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -301,6 +300,7 @@
 				0B46D073270DCFF500A15D7E /* PerfilDatosViewController.xib */,
 				D707981F27206E2A0066B066 /* TerminosViewController.xib */,
 				D76E34862717336000A1D11C /* HoyViewController.xib */,
+				D707985327208D990066B066 /* AgregarPagoViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
