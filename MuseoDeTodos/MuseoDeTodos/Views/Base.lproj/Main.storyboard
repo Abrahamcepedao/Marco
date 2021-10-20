@@ -1974,8 +1974,8 @@ De click en la siguiente imagen, posicione su teléfono de manera horizontal y n
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="logo" width="2444" height="2444"/>
         <image name="mastercard-logo" width="3500" height="2723"/>
-        <image name="person" width="3325" height="3412"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person" width="3325" height="3412"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="telefono" width="512" height="512"/>
         <image name="ticket" catalog="system" width="128" height="84"/>
