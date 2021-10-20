@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import RealmSwift
 
-struct Card {
-    var image: String
-    var number: String
-    var expiration: String
-    var cvc: Int16
+class Card: Object{
+    @objc dynamic var image: String = ""
+    @objc dynamic var number: String = ""
+    @objc  dynamic var expiration: String = ""
+    @objc  dynamic var cvc: Int16 = 0
 }

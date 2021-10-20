@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import RealmSwift
+import FirebaseAuth
 
 class AgregarPagoViewController: UIViewController {
-
+    
     //textfields
     @IBOutlet weak var cardNumTF: UITextField!
     @IBOutlet weak var expirationTF: UITextField!
@@ -17,6 +19,7 @@ class AgregarPagoViewController: UIViewController {
     
     //image
     @IBOutlet weak var methodImg: UIImageView!
+    let images = ["american-logo", "mastercard-logo", "visa-logo"]
     
     //button
     @IBOutlet weak var addBtn: UIButton!
@@ -32,6 +35,15 @@ class AgregarPagoViewController: UIViewController {
         setupPicker()
         setupTF()
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+            super.viewWillDisappear(animated)
+            if let firstVC = presentingViewController as? PagosViewController {
+                DispatchQueue.main.async {
+                    firstVC.pagosTV.reloadData()
+                }
+            }
+        }
     
     func setupPicker(){
         methodPV.delegate = self
@@ -64,13 +76,53 @@ class AgregarPagoViewController: UIViewController {
     
     
     @objc func donePressed(){
-//        methodTF.text = methodPV.inputView.text
         self.view.endEditing(true)
     }
 
     @IBAction func addBtnTapped(_ sender: UIButton) {
+        if(verify()){
+            let username = Auth.auth().currentUser?.uid ?? ""
+            var config = Realm.Configuration.defaultConfiguration
+            config.fileURL!.deleteLastPathComponent()
+            config.fileURL!.appendPathComponent(username)
+            config.fileURL!.appendPathExtension("realm")
+            let realm = try! Realm(configuration: config)
+            
+            do {
+                try realm.write {
+                    let newCard = Card()
+                    
+                    var index = 0
+                    for i in 0..<methods.count {
+                        if(methods[i] == methodTF.text){
+                            index = i
+                        }
+                    }
+                    
+                    
+                    newCard.number = cardNumTF.text!
+                    newCard.expiration = expirationTF.text!
+                    newCard.cvc = Int16(vcvTF.text!)!
+                    newCard.image = images[index]
+                    
+                    realm.add(newCard)
+                    
+                    //alert tarjeta agregada con exito
+                    let alert = UIAlertController(title: "Tarjeta", message: "Método de pago agregado exitosamente", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                            NSLog("The \"OK\" alert occured.")
+                        }))
+                    self.present(alert, animated: true, completion: nil)
+                }
+            } catch {
+                print("error")
+            }
+        }
         
-        
+    }
+    
+    func verify() -> Bool{
+        return true
     }
     
     //expiration validation
@@ -176,7 +228,6 @@ extension AgregarPagoViewController:  UIPickerViewDelegate, UIPickerViewDataSour
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-        let images = ["american-logo", "mastercard-logo", "visa-logo"]
         methodImg.image = UIImage(named: images[row])
         
         methodTF.text = methods[row]

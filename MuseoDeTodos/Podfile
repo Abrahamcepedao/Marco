@@ -18,5 +18,6 @@ target 'MuseoDeTodos' do
   
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
-
+  pod 'RealmSwift', '~>10'
+  
 end

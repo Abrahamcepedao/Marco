@@ -1,6 +1,0 @@
-framework module Pods_MuseoDeTodos_MuseoDeTodosUITests {
-  umbrella header "Pods-MuseoDeTodos-MuseoDeTodosUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
