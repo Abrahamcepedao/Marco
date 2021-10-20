@@ -18,6 +18,12 @@
 		314D8A7C0C950746D78588FB /* Pods_MuseoDeTodos_MuseoDeTodosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A441B721F1597A349A2A57EF /* Pods_MuseoDeTodos_MuseoDeTodosUITests.framework */; };
 		324D343F26F551E00051F15D /* Exposiciones2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D343E26F551E00051F15D /* Exposiciones2ViewController.swift */; };
 		68B028D67AD838EFBC19F743 /* Pods_MuseoDeTodos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750493A77A4A867DBD94CE72 /* Pods_MuseoDeTodos.framework */; };
+		D707981A272052E70066B066 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7079819272052E70066B066 /* User.swift */; };
+		D707982027206E2A0066B066 /* TerminosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D707981E27206E2A0066B066 /* TerminosViewController.swift */; };
+		D707982127206E2A0066B066 /* TerminosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D707981F27206E2A0066B066 /* TerminosViewController.xib */; };
+		D707982A27206F3E0066B066 /* TerminoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D707982827206F3E0066B066 /* TerminoTableViewCell.swift */; };
+		D707982B27206F3E0066B066 /* TerminoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D707982927206F3E0066B066 /* TerminoTableViewCell.xib */; };
+		D7079830272071120066B066 /* Termino.swift in Sources */ = {isa = PBXBuildFile; fileRef = D707982F272071120066B066 /* Termino.swift */; };
 		D708E8E526D31C5D00CFD79D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D708E8E426D31C5D00CFD79D /* AppDelegate.swift */; };
 		D708E8E726D31C5D00CFD79D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D708E8E626D31C5D00CFD79D /* SceneDelegate.swift */; };
 		D708E8EC26D31C5D00CFD79D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D708E8EA26D31C5D00CFD79D /* Main.storyboard */; };
@@ -89,6 +95,12 @@
 		86B6F7F630083A03186C761C /* Pods-MuseoDeTodos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuseoDeTodos.release.xcconfig"; path = "Target Support Files/Pods-MuseoDeTodos/Pods-MuseoDeTodos.release.xcconfig"; sourceTree = "<group>"; };
 		957CFD6A453D566044188C2D /* Pods-MuseoDeTodos-MuseoDeTodosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuseoDeTodos-MuseoDeTodosUITests.release.xcconfig"; path = "Target Support Files/Pods-MuseoDeTodos-MuseoDeTodosUITests/Pods-MuseoDeTodos-MuseoDeTodosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A441B721F1597A349A2A57EF /* Pods_MuseoDeTodos_MuseoDeTodosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuseoDeTodos_MuseoDeTodosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7079819272052E70066B066 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D707981E27206E2A0066B066 /* TerminosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminosViewController.swift; sourceTree = "<group>"; };
+		D707981F27206E2A0066B066 /* TerminosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TerminosViewController.xib; sourceTree = "<group>"; };
+		D707982827206F3E0066B066 /* TerminoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminoTableViewCell.swift; sourceTree = "<group>"; };
+		D707982927206F3E0066B066 /* TerminoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TerminoTableViewCell.xib; sourceTree = "<group>"; };
+		D707982F272071120066B066 /* Termino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Termino.swift; sourceTree = "<group>"; };
 		D708E8E126D31C5C00CFD79D /* MuseoDeTodos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseoDeTodos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D708E8E426D31C5D00CFD79D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D708E8E626D31C5D00CFD79D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -259,6 +271,7 @@
 				D72F606327040B0C00DC2FF6 /* ReservaViewController.swift */,
 				D76E34852717336000A1D11C /* HoyViewController.swift */,
 				0717165827206E7600A505F4 /* AcercaMuseoViewController.swift */,
+				D707981E27206E2A0066B066 /* TerminosViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -271,6 +284,7 @@
 				0B585FBA270D71470050EE3B /* CentroAyudaViewController.xib */,
 				0B585FC1270D7C140050EE3B /* FaqsViewController.xib */,
 				0B46D073270DCFF500A15D7E /* PerfilDatosViewController.xib */,
+				D707981F27206E2A0066B066 /* TerminosViewController.xib */,
 				D76E34862717336000A1D11C /* HoyViewController.xib */,
 			);
 			path = Views;
@@ -284,6 +298,8 @@
 				D7A75B4626EAF33400F7443C /* Reserva.swift */,
 				D76E34972717406700A1D11C /* Evento.swift */,
 				D7927B14271890570049D1FD /* Question.swift */,
+				D7079819272052E70066B066 /* User.swift */,
+				D707982F272071120066B066 /* Termino.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -312,6 +328,8 @@
 				D76E34A6271797E500A1D11C /* EventoTableViewCell.xib */,
 				D7927B19271890870049D1FD /* QuestionTableViewCell.swift */,
 				D7927B1A271890870049D1FD /* QuestionTableViewCell.xib */,
+				D707982827206F3E0066B066 /* TerminoTableViewCell.swift */,
+				D707982927206F3E0066B066 /* TerminoTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -434,10 +452,12 @@
 				D76E34882717336000A1D11C /* HoyViewController.xib in Resources */,
 				D708E8F126D31C6500CFD79D /* LaunchScreen.storyboard in Resources */,
 				D79F89F426E822A700659267 /* GoogleService-Info.plist in Resources */,
+				D707982B27206F3E0066B066 /* TerminoTableViewCell.xib in Resources */,
 				D708E8EE26D31C6500CFD79D /* Assets.xcassets in Resources */,
 				D79F89FB26E8E48900659267 /* ExposicionTableViewCell.xib in Resources */,
 				D708E8EC26D31C5D00CFD79D /* Main.storyboard in Resources */,
 				0B585FC3270D7C140050EE3B /* FaqsViewController.xib in Resources */,
+				D707982127206E2A0066B066 /* TerminosViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +589,7 @@
 				D7A75B4726EAF33400F7443C /* Reserva.swift in Sources */,
 				D76E34982717406700A1D11C /* Evento.swift in Sources */,
 				D79F8A0526E8EAA400659267 /* Exposicion.swift in Sources */,
+				D7079830272071120066B066 /* Termino.swift in Sources */,
 				324D343F26F551E00051F15D /* Exposiciones2ViewController.swift in Sources */,
 				D79F89E326E8133800659267 /* LoginViewController.swift in Sources */,
 				D79F89DE26E8125000659267 /* SignUpViewController.swift in Sources */,
@@ -582,10 +603,13 @@
 				0B46D074270DCFF500A15D7E /* PerfilDatosViewController.swift in Sources */,
 				D79F89FA26E8E48900659267 /* ExposicionTableViewCell.swift in Sources */,
 				D79A515526E92CFB0085BA67 /* DatosPerfilViewController.swift in Sources */,
+				D707982A27206F3E0066B066 /* TerminoTableViewCell.swift in Sources */,
 				D79F8A0026E8E9F800659267 /* ExposicionesViewController.swift in Sources */,
 				0B585FC2270D7C140050EE3B /* FaqsViewController.swift in Sources */,
 				D76E349227173D7400A1D11C /* CalendarCollectionViewCell.swift in Sources */,
+				D707982027206E2A0066B066 /* TerminosViewController.swift in Sources */,
 				D7F6721826D577960091B47A /* Option.swift in Sources */,
+				D707981A272052E70066B066 /* User.swift in Sources */,
 				D7A75B3C26EAEFDD00F7443C /* RerservasTableViewCell.swift in Sources */,
 				D7927B15271890570049D1FD /* Question.swift in Sources */,
 				D708E91B26D31CAE00CFD79D /* PerfilViewController.swift in Sources */,
