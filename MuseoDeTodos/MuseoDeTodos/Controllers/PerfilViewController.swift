@@ -19,7 +19,7 @@ class PerfilViewController: UIViewController {
     @IBOutlet weak var centroAyudaBtn: UIButton!
     
     let options: [Option] = [
-        Option(title: "Terminos y condiciones", image: "info.circle"),
+        Option(title: "Terminos de servicio", image: "info.circle"),
         Option(title: "Acerca del museo", image: "info.circle"),
         Option(title: "Contáctanos", image: "info.circle"),
         Option(title: "Cerrar sesión", image: "info.circle")]
