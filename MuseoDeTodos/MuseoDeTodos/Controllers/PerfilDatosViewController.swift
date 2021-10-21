@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseFirestore
 
 class PerfilDatosViewController: UIViewController{
     
@@ -19,7 +21,7 @@ class PerfilDatosViewController: UIViewController{
     @IBOutlet weak var segundoNombreTxt: UITextField!
     var nombre: String?
     var email: String?
-    var pass: String?
+    var sex: String?
     var apellidos: String?
     var segundoNombre: String?
     
@@ -29,6 +31,12 @@ class PerfilDatosViewController: UIViewController{
     
     //datepciker
     let datePicker = UIDatePicker()
+    
+    //db
+    private var db = Firestore.firestore()
+    
+    //user data
+    var userData: User?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,11 +45,10 @@ class PerfilDatosViewController: UIViewController{
         // setup pickers
         setupPicker()
         setupDatePicker()
-        sexoTxt.text = gender[0]
+        sexoTxt.text = sex
         
         emailTxt.text = email
         primerNombreTxt.text = nombre
-        passTxt.text = pass
         apellidosTxt.text = apellidos
         segundoNombreTxt.text = segundoNombre
         
@@ -54,6 +61,8 @@ class PerfilDatosViewController: UIViewController{
         }
         
     }
+    
+    
     
     func setupPicker(){
         genderPickerView.delegate = self
@@ -143,6 +152,54 @@ class PerfilDatosViewController: UIViewController{
     
     @IBAction func guardarPress(_ sender: Any) {
         desactivaCampo()
+        
+        guard let uid = Auth.auth().currentUser?.uid else {
+            let alert = UIAlertController(title: "Sucedió un error..", message: "No ha iniciado sesión", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                    NSLog("The \"OK\" alert occured.")
+                }))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        
+        guard let firstname = primerNombreTxt.text else  {
+            let alert = UIAlertController(title: "Sucedió un error..", message: "Ingrese su primer nombre", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                    NSLog("The \"OK\" alert occured.")
+                }))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        
+        guard let lastname = apellidosTxt.text else  {
+            let alert = UIAlertController(title: "Sucedió un error..", message: "Ingrese sus apellidos", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                    NSLog("The \"OK\" alert occured.")
+                }))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        
+        guard let sex = sexoTxt.text else  {
+            let alert = UIAlertController(title: "Sucedió un error..", message: "Seleccione su sexo", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                    NSLog("The \"OK\" alert occured.")
+                }))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        
+        guard let birthdate = fechaNacimientoTxt.text else  {
+            let alert = UIAlertController(title: "Sucedió un error..", message: "Seleccione su fecha de nacimiento", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                    NSLog("The \"OK\" alert occured.")
+                }))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        
+        db.collection("users").document(uid).updateData(["email": email ?? Auth.auth().currentUser!.email!, "firstname": firstname, "secondname": segundoNombreTxt.text ?? "", "lastnames": lastname, "sex": sex, "birthdate": birthdate])
+        
         let alert = UIAlertController(title: "Guardar", message: "Cambios guardados exitosamente", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
                 NSLog("The \"OK\" alert occured.")
@@ -150,15 +207,6 @@ class PerfilDatosViewController: UIViewController{
         self.present(alert, animated: true, completion: nil)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 

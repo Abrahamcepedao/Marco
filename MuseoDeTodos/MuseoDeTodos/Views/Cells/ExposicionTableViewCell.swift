@@ -18,11 +18,13 @@ class ExposicionTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         setupStyles()
+        
     }
     
     func setupStyles(){
-        backgroundImage.layer.cornerRadius = 10
         overlayView.layer.cornerRadius = 10
+        backgroundImage.layer.cornerRadius = 10
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -32,3 +34,4 @@ class ExposicionTableViewCell: UITableViewCell {
     }
     
 }
+
